@@ -1,0 +1,57 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Forest X Reborn v. 1.0.0",
+		"description": "The revival of the legendary Forest X Second Edition addon.",
+		"min_engine_version": [
+			1,
+			17,
+			30
+		],
+		"uuid": "3992967a-cf30-4adb-bc67-4b218a595e77",
+		"version": [
+			1,
+			0,
+			0
+		]
+	},
+	"modules": [
+		{
+			"description": "The revival of the legendary Forest X Second Edition addon.",
+			"type": "data",
+			"uuid": "c7794b26-c1e8-403b-bdf5-d29070303964",
+			"version": [
+				1,
+				0,
+				0
+			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213"
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "basic",
+			"name": "Base features of addon",
+			"memory_tier": 1
+		}
+	],
+	"metadata": {
+		"generated_with": {
+			"bridge": [
+				"2.6.0"
+			],
+			"dash": [
+				"0.10.8"
+			]
+		}
+	}
+}
