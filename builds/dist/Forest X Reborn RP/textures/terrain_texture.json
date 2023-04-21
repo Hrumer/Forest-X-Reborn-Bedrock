@@ -4,20 +4,11 @@
 	"resource_pack_name": "Forest X",
 	"texture_name": "atlas.terrain",
 	"texture_data": {
-		"forest_crushed_sandstone": {
+		"crushed_sandstone": {
 			"textures": "textures/blocks/crushed_sandstone"
 		},
-		"forest_crushed_sandstone_mer": {
+		"crushed_sandstone_mer": {
 			"textures": "textures/blocks/crushed_sandstone_mer"
-		},
-		"forest_crushed_sandstone_heightmap": {
-			"textures": "textures/blocks/crushed_sandstone_heightmap"
-		},
-		"forest_crushed_sandstone_slab": {
-			"textures": "textures/blocks/crushed_sandstone"
-		},
-		"forest_crushed_sandstone_stairs": {
-			"textures": "textures/blocks/crushed_sandstone"
 		}
 	}
 }

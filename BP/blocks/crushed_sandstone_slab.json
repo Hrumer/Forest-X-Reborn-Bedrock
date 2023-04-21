@@ -12,7 +12,7 @@
 			}
 		},
 		"components": {
-			"minecraft:destroy_time": 2.5,
+			"minecraft:destroy_time": 2.6,
 			"minecraft:creative_category": {
 				"group": "itemGroup.name.slab",
 				"category": "construction"
@@ -30,7 +30,6 @@
 				"components": {
 					"minecraft:geometry": "geometry.slab_down",
 					"minecraft:block_light_absorption": 0,
-					"tag:stone": {},
 					"minecraft:on_interact": {
 						"event": "forest:block",
 						"target": "self",
@@ -62,7 +61,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "forest_crushed_sandstone",
+							"texture": "crushed_sandstone",
 							"render_method": "alpha_test"
 						}
 					}
@@ -104,7 +103,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "forest_crushed_sandstone",
+							"texture": "crushed_sandstone",
 							"render_method": "alpha_test"
 						}
 					}
@@ -116,11 +115,9 @@
 					"minecraft:unit_cube": {},
 					"minecraft:loot": "loot_tables/blocks/crushed_sandstone_slab_double.json",
 					"minecraft:block_light_absorption": 15,
-					"tag:wood_pick_diggable": {},
-					"tag:stone": {},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "forest_crushed_sandstone",
+							"texture": "crushed_sandstone",
 							"render_method": "opaque"
 						}
 					}
@@ -132,13 +129,7 @@
 				"set_block_property": {
 					"forest:slab": 2
 				},
-				"decrement_stack": {},
-				"run_command": {
-					"command": [
-						"playsound use.stone"
-					],
-					"target": "block"
-				}
+				"decrement_stack": {}
 			},
 			"forest:up": {
 				"set_block_property": {

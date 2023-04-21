@@ -9,9 +9,6 @@
 		},
 		"crushed_sandstone_mer": {
 			"textures": "textures/blocks/crushed_sandstone_mer"
-		},
-		"crushed_sandstone_heightmap": {
-			"textures": "textures/blocks/crushed_sandstone_heightmap"
 		}
 	}
 }

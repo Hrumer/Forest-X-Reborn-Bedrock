@@ -5,13 +5,15 @@
 		0
 	],
 	"forest:crushed_sandstone": {
-		"textures": "forest_crushed_sandstone",
+		"textures": "crushed_sandstone",
 		"sound": "stone"
 	},
 	"forest:crushed_sandstone_slab": {
+		"textures": "crushed_sandstone",
 		"sound": "stone"
 	},
 	"forest:crushed_sandstone_stairs": {
+		"textures": "crushed_sandstone",
 		"sound": "stone"
 	}
 }

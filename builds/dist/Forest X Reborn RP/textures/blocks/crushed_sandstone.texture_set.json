@@ -1,8 +1,7 @@
 {
     "format_version": "1.16.100",
     "minecraft:texture_set": {
-        "color": "forest_crushed_sandstone",
-        "metalness_emissive_roughness": "forest_crushed_sandstone_mer",
-        "heightmap": "forest_crushed_sandstone_heightmap"
+        "color": "crushed_sandstone",
+        "metalness_emissive_roughness": "crushed_sandstone_mer"
     }
 }
