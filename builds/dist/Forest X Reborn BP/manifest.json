@@ -5,10 +5,10 @@
 		"description": "The revival of the legendary Forest X Second Edition addon.",
 		"min_engine_version": [
 			1,
-			19,
-			60
+			17,
+			30
 		],
-		"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213",
+		"uuid": "3992967a-cf30-4adb-bc67-4b218a595e77",
 		"version": [
 			1,
 			0,
@@ -18,13 +18,23 @@
 	"modules": [
 		{
 			"description": "The revival of the legendary Forest X Second Edition addon.",
-			"type": "resources",
-			"uuid": "5f27ac93-f9dd-4a64-a8f4-831d98ebd503",
+			"type": "data",
+			"uuid": "c7794b26-c1e8-403b-bdf5-d29070303964",
 			"version": [
 				1,
 				0,
 				0
 			]
+		}
+	],
+	"dependencies": [
+		{
+			"version": [
+				1,
+				0,
+				0
+			],
+			"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213"
 		}
 	],
 	"subpacks": [
@@ -33,9 +43,6 @@
 			"name": "Base features of addon",
 			"memory_tier": 1
 		}
-	],
-	"capabilities": [
-		"raytraced"
 	],
 	"metadata": {
 		"generated_with": {
