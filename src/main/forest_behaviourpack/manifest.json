@@ -1,0 +1,46 @@
+{
+  "format_version": 2,
+  "header": {
+    "description": "",
+    "name": "Forest X Reborn",
+    "uuid": "f379cfd7-a55b-3215-b7a8-389d1817a102",
+    "version": [
+      1,
+      0,
+      0
+    ],
+    "min_engine_version": [
+      1,
+      19,
+      0
+    ]
+  },
+  "modules": [
+    {
+      "description": "",
+      "type": "data",
+      "uuid": "63e27b8a-c30b-3597-8d11-ebb0dab16eca",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "dependencies": [
+    {
+      "uuid": "7c92f6e8-4623-38e3-855a-da7e35243d46",
+      "version": [
+        1,
+        0,
+        0
+      ]
+    }
+  ],
+  "metadata": {
+    "authors": [
+      "chizh, MCreator"
+    ],
+    "url": "https://mcreator.net"
+  }
+}
