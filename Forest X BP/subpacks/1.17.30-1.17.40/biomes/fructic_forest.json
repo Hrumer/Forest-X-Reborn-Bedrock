@@ -1,0 +1,53 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "fructic_forest"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.6,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 1
+			},
+			"minecraft:overworld_height": {
+				"noise_type": "lowlands"
+			},
+			"animal": {},
+			"forest": {},
+			"overworld": {},
+			"fructic_forest": {},
+			"minecraft:surface_parameters": {
+				"top_material": "minecraft:grass",
+				"mid_material": "minecraft:dirt",
+				"foundation_material": "minecraft:stone",
+				"sea_floor_material": "minecraft:gravel",
+				"sea_material": "minecraft:water",
+				"sea_floor_depth": 7
+			},
+			"minecraft:overworld_generation_rules": {
+				"mutate_transformation": [
+					"flower_forest",
+					"jungle"
+				],
+				"generate_for_climates": [
+					[
+						"medium",
+						1
+					],
+					[
+						"lukewarm",
+						1
+					],
+					[
+						"warm",
+						1
+					]
+				]
+			}
+		}
+	}
+}

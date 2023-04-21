@@ -1,0 +1,29 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "salt_egg"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:egg",
+				"data": 0
+			},
+			"B": {
+				"item": "forest:salt",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "forest:salt_egg",
+			"count": 1
+		}
+	}
+}

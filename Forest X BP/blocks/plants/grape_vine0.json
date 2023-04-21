@@ -1,0 +1,120 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:grape_vine0"
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "grape_vine0",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:geometry": "geometry.cross",
+			"tag:plant": {},
+			"minecraft:destroy_time": 0.4,
+			"minecraft:block_light_absorption": 0,
+			"minecraft:friction": 0.5,
+			"minecraft:map_color": "#00ff00",
+			"minecraft:flammable": {
+				"flame_odds": 50,
+				"burn_odds": 50
+			},
+			"minecraft:on_interact": {
+				"event": "forest:bone_meal",
+				"target": "self",
+				"condition": "q.get_equipped_item_name=='bone_meal'"
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:ticking": {
+				"looping": true,
+				"range": [
+					30,
+					57
+				],
+				"on_tick": {
+					"event": "fruit:fruit",
+					"target": "self"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"side",
+							"down"
+						],
+						"block_filter": [
+							"minecraft:leaves",
+							"minecraft:leaves2",
+							"minecraft:log",
+							"minecraft:log2"
+						]
+					},
+					{
+						"allowed_faces": [
+							"down"
+						],
+						"block_filter": [
+							"forest:grape_vine0",
+							"forest:grape_vine1"
+						]
+					}
+				]
+			},
+			"minecraft:loot": "loot_tables/blocks/grape_vine.json"
+		},
+		"events": {
+			"fruit:fruit": {
+				"randomize": [
+					{
+						"set_block_at_pos": {
+							"block_type": "forest:grape_vine1",
+							"block_offset": [
+								0,
+								0,
+								0
+							]
+						}
+					},
+					{
+						"run_command": {
+							"command": [
+								"fill ~ ~-1 ~ ~ ~-1 ~ forest:grape_vine0 0 replace air"
+							]
+						}
+					}
+				]
+			},
+			"forest:bone_meal": {
+				"trigger": {
+					"event": "fruit:fruit",
+					"condition": "query.get_equipped_item_name=='minecraft:bone_meal'",
+					"target": "self"
+				},
+				"decrement_stack": {},
+				"run_command": {
+					"target": "self",
+					"command": [
+						"playsound item.bone_meal.use @a[r=25] ~~~ 1.0"
+					]
+				}
+			}
+		}
+	}
+}

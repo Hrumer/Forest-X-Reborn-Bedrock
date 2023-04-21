@@ -1,0 +1,250 @@
+{
+	"format_version": "1.11",
+	"minecraft:entity": {
+		"description": {
+			"identifier": "minecraft:player",
+			"is_spawnable": false,
+			"is_summonable": false,
+			"is_experimental": false,
+			"scripts": {
+				"animate": [
+					"walk"
+				]
+			},
+			"animations": {
+				"walk": "controller.animation.walk"
+			}
+		},
+		"component_groups": {
+			"forest:respawn": {
+				"minecraft:mark_variant": {
+					"value": 99999
+				},
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
+				},
+				"minecraft:movement": {
+					"value": 0.1
+				},
+				"minecraft:attack": {
+					"damage": 1
+				},
+				"minecraft:spell_effects": {
+					"remove_effects": [
+						"slowness"
+					]
+				}
+			},
+			"ammo:1": {
+				"minecraft:mark_variant": {
+					"value": 1
+				}
+			},
+			"forest:cast_iron": {
+				"minecraft:health": {
+					"value": 20,
+					"max": 20
+				},
+				"minecraft:movement": {
+					"value": 0.1
+				},
+				"minecraft:spell_effects": {
+					"add_effects": [
+						{
+							"effect": "slowness",
+							"duration": 60000,
+							"amplifier": 1,
+							"display_on_screen_animation": false
+						}
+					]
+				}
+			}
+		},
+		"components": {
+			"minecraft:type_family": {
+				"family": [
+					"player"
+				]
+			},
+			"minecraft:loot": {
+				"table": "loot_tables/empty.json"
+			},
+			"minecraft:collision_box": {
+				"width": 0.6,
+				"height": 1.8
+			},
+			"minecraft:can_climb": {},
+			"minecraft:movement": {
+				"value": 0.1
+			},
+			"minecraft:environment_sensor": [
+				{
+					"on_environment": {
+						"filters": {
+							"any_of": [
+								{
+									"test": "is_family",
+									"subject": "self",
+									"value": "player"
+								}
+							]
+						},
+						"event": "forest:refresh_player"
+					}
+				},
+				{
+					"on_environment": {
+						"filters": {
+							"any_of": [
+								{
+									"test": "has_equipment",
+									"subject": "self",
+									"domain": "hand",
+									"value": "forest:cast_iron_hoe"
+								},
+								{
+									"test": "has_equipment",
+									"subject": "self",
+									"domain": "hand",
+									"value": "forest:cast_iron_sword"
+								},
+								{
+									"test": "has_equipment",
+									"subject": "self",
+									"domain": "hand",
+									"value": "forest:cast_iron_axe"
+								},
+								{
+									"test": "has_equipment",
+									"subject": "self",
+									"domain": "hand",
+									"value": "forest:cast_iron_shovel"
+								},
+								{
+									"test": "has_equipment",
+									"subject": "self",
+									"domain": "hand",
+									"value": "forest:cast_iron_pickaxe"
+								}
+							]
+						},
+						"event": "forest:cast_iron_event"
+					}
+				}
+			],
+			"minecraft:player.saturation": {
+				"value": 20
+			},
+			"minecraft:player.exhaustion": {
+				"value": 0,
+				"max": 4
+			},
+			"minecraft:player.level": {
+				"value": 0,
+				"max": 24791
+			},
+			"minecraft:player.experience": {
+				"value": 0,
+				"max": 1
+			},
+			"minecraft:breathable": {
+				"totalSupply": 15,
+				"suffocateTime": -1,
+				"inhaleTime": 3.75,
+				"generatesBubbles": false
+			},
+			"minecraft:nameable": {
+				"alwaysShow": true,
+				"allowNameTagRenaming": false
+			},
+			"minecraft:physics": {},
+			"minecraft:insomnia": {
+				"days_until_insomnia": 3
+			},
+			"minecraft:rideable": {
+				"seat_count": 2,
+				"family_types": [
+					"parrot_tame"
+				],
+				"pull_in_entities": true,
+				"seats": [
+					{
+						"position": [
+							0.4,
+							-0.15,
+							0.04
+						],
+						"min_rider_count": 0,
+						"max_rider_count": 0,
+						"lock_rider_rotation": 0
+					},
+					{
+						"position": [
+							-0.4,
+							-0.15,
+							0.04
+						],
+						"min_rider_count": 1,
+						"max_rider_count": 2,
+						"lock_rider_rotation": 0
+					}
+				]
+			},
+			"minecraft:scaffolding_climber": {}
+		},
+		"events": {
+			"forest:refresh_player": {
+				"add": {
+					"component_groups": [
+						"forest:respawn"
+					]
+				},
+				"remove": {
+					"component_groups": [
+						"forest:cast_iron"
+					]
+				}
+			},
+			"minecraft:entity_spawned": {
+				"add": {
+					"component_groups": [
+						"forest:respawn"
+					]
+				},
+				"remove": {}
+			},
+			"ammo:1": {
+				"remove": {
+					"component_groups": [
+						"ammo:1"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ammo:1"
+					]
+				}
+			},
+			"ammo:2": {
+				"remove": {
+					"component_groups": [
+						"ammo:2"
+					]
+				},
+				"add": {
+					"component_groups": [
+						"ammo:2"
+					]
+				}
+			},
+			"forest:cast_iron_event": {
+				"add": {
+					"component_groups": [
+						"forest:cast_iron"
+					]
+				}
+			}
+		}
+	}
+}

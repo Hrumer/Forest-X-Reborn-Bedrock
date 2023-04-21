@@ -1,0 +1,113 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:ancient_jukebox_egypt",
+			"properties": {
+				"forest:face": [
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ancient_jukebox",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destroy_time": 1,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#00FF00",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:on_player_placing": {
+				"event": "forest:place"
+			},
+			"minecraft:on_interact": {
+				"target": "self",
+				"event": "record_egypt_stop"
+			},
+			"minecraft:geometry": "geometry.block",
+			"minecraft:on_player_destroyed": {
+				"event": "ancient_jukebox_egypt_break",
+				"target": "self"
+			},
+			"minecraft:loot": "loot_tables/blocks/empty.json"
+		},
+		"events": {
+			"forest:place": {
+				"set_block_property": {
+					"forest:face": "(query.cardinal_player_facing)"
+				}
+			},
+			"record_egypt_stop": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"stopsound @a[r=80]"
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/jukebox/record_egypt.json"
+				},
+				"set_block": {
+					"block_type": "forest:ancient_jukebox"
+				}
+			},
+			"ancient_jukebox_egypt_break": {
+				"run_command": {
+					"target": "self",
+					"command": [
+						"stopsound @a[r=80]"
+					]
+				},
+				"spawn_loot": {
+					"table": "loot_tables/jukebox/ancient_jukebox_egypt_break.json"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('forest:face') == 2",
+				"components": {
+					"minecraft:block_light_absorption": 0
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			}
+		]
+	}
+}

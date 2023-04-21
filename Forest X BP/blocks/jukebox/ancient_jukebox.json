@@ -1,0 +1,231 @@
+{
+	"format_version": "1.16.200",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:ancient_jukebox",
+			"properties": {
+				"forest:face": [
+					1,
+					2,
+					3,
+					4,
+					5
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "ancient_jukebox",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:destroy_time": 1,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#00FF00",
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.jukebox",
+				"category": "items"
+			},
+			"minecraft:block_light_absorption": 0,
+			"minecraft:block_light_emission": 0,
+			"minecraft:on_player_placing": {
+				"event": "forest:place"
+			},
+			"minecraft:on_interact": {
+				"target": "self",
+				"event": "records"
+			},
+			"minecraft:geometry": "geometry.block"
+		},
+		"events": {
+			"forest:place": {
+				"set_block_property": {
+					"forest:face": "(query.cardinal_player_facing)"
+				}
+			},
+			"records": {
+				"sequence": [
+					{
+						"condition": "query.get_equipped_item_name=='record_egypt'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_egypt"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.egypt @a[r=25] ~~~ 1.0",
+								"title @a[r=10] actionbar §dNow playing: PopCap - Egypt"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_zodiak'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_zodiak"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.zodiak @a[r=25] ~~~ 1.0",
+								"title @a[r=10] actionbar §dNow playing: Disco Alliance - Zodiak"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_scopophobia'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_scopophobia"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.scopophobia @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: mango unit - scopophobia"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_enderwave'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_enderwave"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.enderwave @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: prod. akobel - Enderwave"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_raid'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_raid"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.raid @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: Someone - Raid"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_anti'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_anti"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.anti @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: Firch - anti"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_carrot'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_carrot"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.carrot @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: CarrotAndCo - carrot"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_repeat'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_repeat"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.repeat @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: iKorbon - repeat"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_blaze'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_blaze"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.blaze @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: mango unit - blaze"
+							]
+						}
+					},
+					{
+						"condition": "query.get_equipped_item_name=='record_weird_realm'",
+						"set_block": {
+							"block_type": "forest:ancient_jukebox_weird_realm"
+						},
+						"decrement_stack": {},
+						"run_command": {
+							"target": "self",
+							"command": [
+								"playsound record.weird_realm @a[r=25] ~~~ 0.3",
+								"title @a[r=10] actionbar §dNow playing: ToastDot.39 - weird realm"
+							]
+						}
+					}
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('forest:face') == 2",
+				"components": {
+					"minecraft:block_light_absorption": 0
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('forest:face') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			}
+		]
+	}
+}

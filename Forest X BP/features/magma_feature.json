@@ -1,0 +1,21 @@
+//bridge-file-version: #6
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "forest:magma_feature"
+		},
+		"count": 24,
+		"replace_rules": [
+			{
+				"places_block": "minecraft:magma",
+				"may_replace": [
+					{
+						"name": "forest:pumice",
+						"states": {}
+					}
+				]
+			}
+		]
+	}
+}

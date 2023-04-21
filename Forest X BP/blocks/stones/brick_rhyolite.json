@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:brick_rhyolite"
+		},
+		"components": {
+			"minecraft:destroy_time": 3,
+			"minecraft:map_color": "#495056",
+			"minecraft:friction": 0.5,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.stoneBrick",
+				"category": "construction"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "brick_rhyolite",
+					"render_method": "opaque"
+				}
+			},
+			"tag:stone": {}
+		},
+		"events": {}
+	}
+}

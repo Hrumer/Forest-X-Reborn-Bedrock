@@ -1,0 +1,58 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:banana_leaves",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/banana_leaves.json",
+			"minecraft:destroy_time": 0.3,
+			"minecraft:friction": 0.5,
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:block_light_absorption": 7.5,
+			"minecraft:block_light_emission": 0,
+					"minecraft:entity_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+			"minecraft:explosion_resistance": 1,
+			"minecraft:geometry": "geometry.leaves",
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "banana_leaves",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:flammable": {
+				"flame_odds": 50,
+				"burn_odds": 60
+			},
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.leaves",
+				"category": "nature"
+                        }
+		},
+		"events": {}
+	}
+}

@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "forest:lemon_parquet"
+    },
+
+    
+    "tags": [ "saw" ],
+    "pattern": [
+      "YXY",
+      "XXX",
+      "YXY"
+    ],
+    "key": {
+      "X": {
+        "item": "forest:lemon_planks"
+      },
+      "Y": {
+        "item": "forest:crystal_dust"
+      }
+    },
+    "result": {
+      "item": "forest:lemon_parquet",
+      "count": 4
+    }
+  }
+}

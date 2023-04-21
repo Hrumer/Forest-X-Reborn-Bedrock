@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:maple_sapling_item",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "maple_sapling"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sapling"
+			},
+			"minecraft:block_placer": {
+				"block": "forest:maple_sapling"
+			},
+			"minecraft:display_name": {
+				"value": "item.forest:maple_sapling"
+			}
+		}
+	}
+}

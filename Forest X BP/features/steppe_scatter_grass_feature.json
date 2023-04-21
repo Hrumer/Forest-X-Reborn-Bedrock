@@ -1,0 +1,33 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.13.0",
+	"minecraft:scatter_feature": {
+		"description": {
+			"identifier": "forest:steppe_scatter_grass_feature"
+		},
+		"iterations": 500,
+		"x": {
+			"distribution": "gaussian",
+			"extent": [
+				-8,
+				8
+			]
+		},
+		"y": {
+			"distribution": "gaussian",
+			"extent": [
+				-4,
+				4
+			]
+		},
+		"z": {
+			"distribution": "gaussian",
+			"extent": [
+				-8,
+				8
+			]
+		},
+		"coordinate_eval_order": "zyx",
+		"places_feature": "forest:steppe_grass_feature"
+	}
+}

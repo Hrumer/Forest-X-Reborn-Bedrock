@@ -1,0 +1,21 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shapeless": {
+    "description": {
+    "identifier": "forest:crystal_red"
+    },   
+     "tags": [ "crafting_table" ],
+    "ingredients": [
+      {
+        "item": "forest:crystal_block"
+      },
+      {
+        "item": "minecraft:dye",
+        "data": 1
+      }
+    ],
+    "result": {
+      "item": "forest:crystal_block_red"
+    }
+  }
+}

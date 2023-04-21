@@ -1,0 +1,20 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:single_block_feature": {
+		"description": {
+			"identifier": "forest:swamp_mud_feature"
+		},
+		"places_block": "forest:swamp_mud",
+		"enforce_survivability_rules": true,
+		"enforce_placement_rules": true,
+		"may_replace": [
+			"minecraft:air"
+		],
+		"may_attach_to": {
+			"min_sides_must_attach": 1,
+			"bottom": [
+				"minecraft:water"
+			]
+		}
+	}
+}

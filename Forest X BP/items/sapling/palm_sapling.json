@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:palm_sapling_item",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "palm_sapling"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sapling"
+			},
+			"minecraft:block_placer": {
+				"block": "forest:palm_sapling"
+			},
+			"minecraft:display_name": {
+				"value": "item.forest:palm_sapling"
+			}
+		}
+	}
+}

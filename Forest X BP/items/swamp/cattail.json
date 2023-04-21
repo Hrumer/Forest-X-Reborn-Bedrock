@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:cattail_item",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "cattail"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.grass"
+			},
+			"minecraft:block_placer": {
+				"block": "forest:cattail"
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:display_name": {
+				"value": "item.forest:cattail"
+			}
+		}
+	}
+}

@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:coco_block"
+		},
+		"components": {
+			"minecraft:destroy_time": 2.5,
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 0.5,
+			"minecraft:friction": 0.5,
+			"tag:wood": {},
+			"minecraft:map_color": "#55381E",
+			"minecraft:flammable": {
+				"burn_odds": 0.3,
+				"flame_odds": 0.3
+			},
+			"minecraft:loot": "loot_tables/coco_block.json",
+			"minecraft:explosion_resistance": 0.3,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "coco_block",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.coco_block",
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					7,
+					5,
+					7
+				]
+			},
+			"minecraft:entity_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					7,
+					5,
+					7
+				]
+			}
+		},
+		"events": {}
+	}
+}

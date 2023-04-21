@@ -1,0 +1,32 @@
+//bridge-file-version: #6
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:rice_bowl"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"XZ "
+		],
+		"key": {
+			"X": {
+				"item": "minecraft:bowl",
+				"data": 0
+			},
+			"Z": {
+				"item": "forest:rice_seed_item",
+				"data": 0
+			}
+		},
+		"result": [
+			{
+				"item": "forest:rice_bowl",
+				"count": 1,
+				"data": 0
+			}
+		]
+	}
+}

@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "palm_planks_31bf08b1"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "forest:palm_log",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "forest:palm_planks",
+      "count": 4
+    }
+  }
+}

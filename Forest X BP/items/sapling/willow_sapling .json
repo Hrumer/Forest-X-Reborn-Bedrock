@@ -1,0 +1,23 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:willow_sapling_item",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "willow_sapling"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.sapling"
+			},
+			"minecraft:block_placer": {
+				"block": "forest:willow_sapling"
+			},
+			"minecraft:display_name": {
+				"value": "item.forest:willow_sapling"
+			}
+		}
+	}
+}

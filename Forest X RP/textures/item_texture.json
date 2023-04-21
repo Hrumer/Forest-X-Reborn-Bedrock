@@ -1,0 +1,320 @@
+{
+	"resource_pack_name": "Forest Experience Add-on",
+	"texture_name": "atlas.items",
+	"texture_data": {
+                "lavender": {
+			"textures": "textures/items/lavender"
+		},
+		"wildflower": {
+			"textures": "textures/items/wildflower"
+		},
+		"salt_egg": {
+			"textures": "textures/items/salt_egg"
+		},
+		"salt_cod": {
+			"textures": "textures/items/salt_cod"
+		},
+		"salt_salmon": {
+			"textures": "textures/items/salt_salmon"
+		},
+		"salt_tropical_fish": {
+			"textures": "textures/items/salt_tropical_fish"
+		},
+		"burning_blossom": {
+			"textures": "textures/items/burning_blossom"
+		},
+		"berry_rasp": {
+			"textures": "textures/items/berry_rasp"
+		},
+		"bush_new_grow_blackberry": {
+			"textures": "textures/items/bush_new_grow_blackberry"
+		},
+		"berry_black": {
+			"textures": "textures/items/berry_black"
+		},
+		"peach_sapling": {
+			"textures": "textures/items/peach_sapling"
+		},
+		"jar": {
+			"textures": "textures/items/jar"
+		},
+		"rasp_jar1": {
+			"textures": "textures/items/rasp_jar1"
+		},
+		"rasp_jar2": {
+			"textures": "textures/items/rasp_jar2"
+		},
+		"rasp_jar3": {
+			"textures": "textures/items/rasp_jar3"
+		},
+		"black_jar1": {
+			"textures": "textures/items/black_jar1"
+		},
+		"black_jar2": {
+			"textures": "textures/items/black_jar2"
+		},
+		"black_jar3": {
+			"textures": "textures/items/black_jar3"
+		},
+		"tomato": {
+			"textures": "textures/items/tomato"
+		},
+		"strawberry_seed": {
+			"textures": "textures/items/strawberry_seed"
+		},
+		"tomato_seed": {
+			"textures": "textures/items/tomato_seed"
+		},
+		"berry_straw": {
+			"textures": "textures/items/berry_straw"
+		},
+		"peach": {
+			"textures": "textures/items/forest_peach"
+		},
+		"lemon": {
+			"textures": "textures/items/forest_lemon"
+		},
+		"pear": {
+			"textures": "textures/items/forest_pear"
+		},
+		"cherry": {
+			"textures": "textures/items/forest_cherry"
+		},
+		"grape": {
+			"textures": "textures/items/forest_grape"
+		},
+		"cherry_sapling": {
+			"textures": "textures/items/cherry_sapling"
+		},
+		"sakura_sapling": {
+			"textures": "textures/items/sakura_sapling"
+		},
+		"pear_sapling": {
+			"textures": "textures/items/pear_sapling"
+		},
+		"lemon_sapling": {
+			"textures": "textures/items/lemon_sapling"
+		},
+		"pear_jar1": {
+			"textures": "textures/items/pear_jar1"
+		},
+		"pear_jar2": {
+			"textures": "textures/items/pear_jar2"
+		},
+		"pear_jar3": {
+			"textures": "textures/items/pear_jar3"
+		},
+		"apple_jar1": {
+			"textures": "textures/items/apple_jar1"
+                },
+		"apple_jar2": {
+			"textures": "textures/items/apple_jar2"
+		},
+		"apple_jar3": {
+			"textures": "textures/items/apple_jar3"
+		},
+		"silver_ingot": {
+			"textures": [
+				"textures/items/silver_ingot"
+			]
+		},
+		"silver_hoe": {
+			"textures": [
+				"textures/items/silver_hoe"
+			]
+		},
+		"silver_shovel": {
+			"textures": [
+				"textures/items/silver_shovel"
+			]
+		},
+		"silver_sword": {
+			"textures": [
+				"textures/items/silver_sword"
+			]
+		},
+		"silver_pickaxe": {
+			"textures": [
+				"textures/items/silver_pickaxe"
+			]
+		},
+		"silver_axe": {
+			"textures": [
+				"textures/items/silver_axe"
+			]
+                },
+		"sunshroom": {
+			"textures": [
+				"textures/items/sunshroom"
+			]
+		},
+		"moonshroom": {
+			"textures": [
+				"textures/items/moonshroom"
+			]
+		},
+		"crystal_dust": {
+			"textures": [
+				"textures/items/crystal_dust"
+			]
+		},
+		"salt": {
+			"textures": [
+				"textures/items/salt"
+			]
+		},
+		"desert_flower": {
+			"textures": [
+				"textures/items/desert_flower"
+			]
+		},
+		"music_disc_egypt": {
+			"textures": [
+				"textures/items/music_disc_egypt"
+			]
+		},
+		"scarab": {
+			"textures": [
+				"textures/items/scarab"
+			]
+		},
+		"coconut": {
+			"textures": [
+				"textures/items/coconut"
+			]
+		},
+		"coconut_open": {
+			"textures": [
+				"textures/items/coconut_open"
+			]
+		},
+		"baobab_sapling": {
+			"textures": [
+				"textures/items/baobab_sapling"
+			]
+		},
+		"bucket_quicksand": {
+			"textures": [
+				"textures/items/bucket_quicksand"
+			]
+		},
+		"berry_cran": {
+			"textures": [
+				"textures/items/berry_cran"
+			]
+		},
+		"palm_sapling": {
+			"textures": [
+				"textures/items/palm_sapling"
+			]
+		},
+		"willow_sapling": {
+			"textures": [
+				"textures/items/willow_sapling"
+			]
+		},
+		"raw_silver": {
+			"textures": [
+				"textures/items/raw_silver"
+			]
+		},
+		"maple_sapling": {
+			"textures": [
+				"textures/items/maple_sapling"
+                        ]
+                },
+                "rice_seed": {
+                        "textures": "textures/items/rice_seed"
+                },
+                "rice_straw": {
+                        "textures": "textures/items/rice_straw"
+                },
+                "rice_bowl": {
+                        "textures": "textures/items/rice_bowl"
+                },
+                "cotton_seed": {
+                        "textures": "textures/items/cotton_seed"
+                },
+                "cotton": {
+                        "textures": "textures/items/cotton"
+    },
+    "forest:fire_amulet": {
+      "textures": "textures/items/forest_fire_amulet"
+    },
+    "forest:ice_amulet": {
+      "textures": "textures/items/forest_ice_amulet"
+    },
+    "forest:water_amulet": {
+      "textures": "textures/items/forest_water_amulet"
+    },
+    "forest:earth_amulet": {
+      "textures": "textures/items/forest_earth_amulet"
+    },
+    "forest:air_amulet": {
+      "textures": "textures/items/forest_air_amulet"
+    },
+    "forest:nature_amulet": {
+      "textures": "textures/items/forest_nature_amulet"
+    },
+    "forest:night_amulet": {
+      "textures": "textures/items/forest_night_amulet"
+    },
+    "forest:golden_amulet": {
+      "textures": "textures/items/forest_golden_amulet"
+    },
+    "forest:light_amulet": {
+      "textures": "textures/items/forest_light_amulet"
+    },
+    "sapphire": {
+      "textures": "textures/items/sapphire"
+    },
+   "peat_piece": {
+      "textures": "textures/items/peat_piece"
+    },
+    "berry_pie": {
+      "textures": "textures/items/berry_pie"
+    },
+    "blueberry": {
+      "textures": "textures/items/blueberry"
+    },
+    "amber": {
+      "textures": "textures/items/amber"
+    },
+    "amber_streak": {
+      "textures": "textures/items/amber_streak"
+    },
+    "cattail": {
+      "textures": "textures/items/cattail"
+    },
+    "music_disc_zodiak": {
+      "textures": "textures/items/music_disc_zodiak"
+    },
+    "cast_iron_ingot": {
+      "textures": "textures/items/cast_iron_ingot"
+    },
+    "cast_iron_axe": {
+      "textures": "textures/items/cast_iron_axe"
+    },
+    "cast_iron_shovel": {
+      "textures": "textures/items/cast_iron_shovel"
+    },
+    "cast_iron_hoe": {
+      "textures": "textures/items/cast_iron_hoe"
+    },
+    "cast_iron_sword": {
+      "textures": "textures/items/cast_iron_sword"
+    },
+    "cast_iron_pickaxe": {
+      "textures": "textures/items/cast_iron_pickaxe"
+    },
+    "sulfur": {
+      "textures": "textures/items/sulfur"
+    },
+    "banana": {
+      "textures": "textures/items/banana"
+    },
+    "banana_sapling": {
+      "textures": "textures/items/banana_sapling"
+		}
+	}
+}

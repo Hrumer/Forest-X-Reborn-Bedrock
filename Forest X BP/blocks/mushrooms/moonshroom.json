@@ -1,0 +1,54 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:moonshroom"
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/moonshroom.json",
+			"minecraft:destroy_time": 0.1,
+			"minecraft:geometry": "geometry.cross",
+			"minecraft:friction": 0.5,
+			"tag:plant": {},
+			"minecraft:map_color": "#75D1E0",
+			"minecraft:pick_collision": {
+				"origin": [
+					-3,
+					0,
+					-3
+				],
+				"size": [
+					6,
+					6,
+					6
+				]
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "moonshroom",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:block_light_emission": 0.3,
+			"minecraft:block_light_absorption": 0.7,
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"block_filter": [
+							"minecraft:stone",
+							"minecraft:dirt",
+							"minecraft:grass",
+							"minecraft:mycelium",
+							"forest:grass_stone"
+						],
+						"allowed_faces": [
+							"up"
+						]
+					}
+				]
+			}
+		},
+		"events": {}
+	}
+}

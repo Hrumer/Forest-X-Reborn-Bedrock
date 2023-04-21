@@ -1,0 +1,53 @@
+//bridge-file-version: #39
+{
+	"format_version": "1.15.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "volcano"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 2,
+				"ash": 0.7
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					0.654,
+					0.911
+				]
+			},
+			"volcano": {},
+			"rare": {},
+			"overworld": {},
+			"minecraft:overworld_generation_rules": {
+				"mutate_transformation": [
+					"extreme_hills_edge",
+					"burned_forest"
+				],
+				"generate_for_climates": [
+					[
+						"cold",
+						1
+					],
+					[
+						"warm",
+						1
+					]
+				]
+			},
+			"minecraft:surface_parameters": {
+				"sea_floor_depth": 2,
+				"sea_floor_material": "minecraft:magma",
+				"sea_material": "minecraft:water",
+				"foundation_material": "minecraft:stone",
+				"mid_material": "minecraft:tuff",
+				"top_material": "forest:pumice"
+			}
+		}
+	}
+}

@@ -1,0 +1,30 @@
+{
+	"format_version": 2,
+	"header": {
+		"name": "Forest X v. 3.2.0",
+		"description": "pack.description",
+		"min_engine_version": [1,17,30],
+		"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213",
+		"version": [3,2,0]
+	},
+	"modules": [
+		{
+			"description": "pack.description",
+			"type": "resources",
+			"uuid": "5f27ac93-f9dd-4a64-a8f4-831d98ebd503",
+			"version": [3,2,0]
+		}
+	],
+	"subpacks": [
+		{
+			"folder_name": "font",
+			"name": "Improved font",
+			"memory_tier": 1
+		},
+		{
+			"folder_name": "basic",
+			"name": "Basic textures",
+			"memory_tier": 1
+		}
+	]
+}

@@ -1,0 +1,24 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:peat_piece_from_peat"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "forest:peat"
+			}
+		},
+		"result": {
+			"item": "forest:peat_piece",
+			"count": 4
+		}
+	}
+}

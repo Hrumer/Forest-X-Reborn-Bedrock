@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "forest:red_crushed_sandstone_stairs"
+    },
+
+    
+    "tags": [ "crafting_table" ],
+    "pattern": [
+      "#  ",
+      "## ",
+      "###"
+    ],
+    "key": {
+      "#": {
+        "item": "forest:red_crushed_sandstone",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "forest:red_crushed_stairs",
+      "count": 4
+    }
+  }
+}

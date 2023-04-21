@@ -1,0 +1,643 @@
+{
+    "format_version": "1.16.100",
+	"minecraft:block": {
+        "description": {
+		    "identifier": "decor:door_concrete_blue",
+			"properties": {
+			    "furni:rotation": [ 0, 1, 2, 3 ],
+				"furni:lower": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ],
+				"furni:upper": [ 0, 1, 2, 3, 4, 5, 6, 7, 8 ]
+			}
+		},
+		"components": {
+		"minecraft:material_instances": {
+		    "*": {
+			    "texture": "door_concrete_blue",
+				"render_method": "blend"
+			}
+		},
+		"minecraft:loot": "loot_tables/door/concrete/door_concrete_blue.json",
+		"minecraft:destroy_time": 2.0,
+		"minecraft:geometry": "geometry.door",
+		"minecraft:block_light_absorption": 0.0,
+		"minecraft:entity_collision": {
+		    "origin": [ -8, 0, -8 ],
+		    "size": [ 16, 16, 3 ]
+		},
+		"minecraft:pick_collision": {
+		    "origin": [ -8, 0, -8 ],
+			"size": [ 16, 16, 3 ]
+		},
+		"minecraft:on_player_placing": {
+		    "event": "event:rotation"
+		},
+		"tag:decor": {}
+	},
+	    "permutations": [
+	    {
+	        "condition": "query.block_property('furni:rotation') == 0",
+		    "components": {
+				"minecraft:rotation": [ 0, 180, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:load_0"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:rotation') == 1",
+		    "components": {
+		        "minecraft:rotation": [ 0, 0, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:load_1"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:rotation') == 2",
+		    "components": {
+		        "minecraft:rotation": [ 0, 270, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:load_2"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:rotation') == 3",
+		    "components": {
+		        "minecraft:rotation": [ 0, 90, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:load_3"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 1",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower",
+				"minecraft:rotation": [ 0, 180, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_lower_0"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 2",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower",
+		        "minecraft:rotation": [ 0, 0, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_lower_1"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 3",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower",
+		        "minecraft:rotation": [ 0, 270, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_lower_2"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 4",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower",
+		        "minecraft:rotation": [ 0, 90, 0 ],
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_lower_3"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 5",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower_open",
+				"minecraft:rotation": [ 0, 180, 0 ],
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_lower_0"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 6",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower_open",
+		        "minecraft:rotation": [ 0, 0, 0 ],
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_lower_1"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 7",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower_open",
+		        "minecraft:rotation": [ 0, 270, 0 ],
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_lower_2"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:lower') == 8",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_lower_open",
+		        "minecraft:rotation": [ 0, 90, 0 ],
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_lower_3"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 1",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper",
+				"minecraft:loot": "loot_tables/null.json",
+				"minecraft:rotation": [ 0, 180, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_upper_0"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 2",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 0, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_upper_1"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 3",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 270, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_upper_2"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 4",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 90, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:open_upper_3"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 5",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper_open",
+				"minecraft:loot": "loot_tables/null.json",
+				"minecraft:rotation": [ 0, 180, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_upper_0"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 6",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper_open",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 0, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_upper_1"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 7",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper_open",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 270, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_upper_2"
+				}
+	        }
+	    },
+	    {
+	        "condition": "query.block_property('furni:upper') == 8",
+		    "components": {
+			    "minecraft:geometry": "geometry.door_upper_open",
+				"minecraft:loot": "loot_tables/null.json",
+		        "minecraft:rotation": [ 0, 90, 0 ],
+                "minecraft:placement_filter": {
+                    "conditions": [
+                {
+                "allowed_faces": [
+                    "up", "down"
+                ],
+                "block_filter": [
+                    "decor:door_concrete_blue"
+                            ]
+                        }
+                    ]
+                },
+				"minecraft:pick_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:entity_collision": {
+				    "origin": [ -8, 0, -8 ],
+					"size": [ 3, 16, 16 ]
+				},
+				"minecraft:on_placed": {
+				    "event": "event:null"
+				},
+				"minecraft:on_player_destroyed": {
+				    "event": "event:air"
+				},
+				"minecraft:on_interact": {
+				    "event": "event:close_upper_3"
+				}
+	        }
+	    }
+	],
+	    "events": {
+		"event:rotation": {
+		"set_block_property": {
+		    "furni:rotation": "query.cardinal_facing_2d-2"
+		    }
+		},
+		"event:load_0": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_1 ~ ~ ~"
+			    ]
+			}
+		},
+		"event:load_1": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_0 ~ ~ ~"
+			    ]
+			}
+		},
+		"event:load_2": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_3 ~ ~ ~"
+			    ]
+			}
+		},
+		"event:load_3": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_2 ~ ~ ~"
+			    ]
+			}
+		},
+		"event:open_lower_0": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_1_o ~ ~ ~",
+			"playsound random.door_open @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_lower_1": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_0_o ~ ~ ~",
+			"playsound random.door_open @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_lower_2": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_3_o ~ ~ ~",
+			"playsound random.door_open @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_lower_3": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_2_o ~ ~ ~",
+			"playsound random.door_open @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_lower_0": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_1 ~ ~ ~",
+			"playsound random.door_close @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_lower_1": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_0 ~ ~ ~",
+			"playsound random.door_close @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_lower_2": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_3 ~ ~ ~",
+			"playsound random.door_close @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_lower_3": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_2 ~ ~ ~",
+			"playsound random.door_close @a ~ ~ ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_upper_0": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_1_o ~ ~-1 ~",
+			"playsound random.door_close @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_upper_1": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_0_o ~ ~-1 ~",
+			"playsound random.door_open @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_upper_2": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_3_o ~ ~-1 ~",
+			"playsound random.door_open @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:open_upper_3": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_2_o ~ ~-1 ~",
+			"playsound random.door_open @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_upper_0": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_1 ~ ~-1 ~",
+			"playsound random.door_close @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_upper_1": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_0 ~ ~-1 ~",
+			"playsound random.door_close @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_upper_2": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_3 ~ ~-1 ~",
+			"playsound random.door_close @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+		"event:close_upper_3": {
+		"run_command": {
+		    "command": [
+			"structure load mystructure:d_c_blue_2 ~ ~-1 ~",
+			"playsound random.door_close @a ~ ~-1 ~ 1 1 1"
+			    ]
+			}
+		},
+        "event:air": {
+           "run_command": {
+              "command": "setblock ~~-1~ air 0 destroy"
+                }
+            }
+	    }
+    }
+}

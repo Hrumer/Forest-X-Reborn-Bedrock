@@ -1,0 +1,19 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:ore_feature": {
+		"description": {
+			"identifier": "forest:crushed_sandstone_feature"
+		},
+		"count": 12,
+		"replace_rules": [
+			{
+				"places_block": "forest:crushed_sandstone",
+				"may_replace": [
+					{
+						"name": "minecraft:sandstone"
+					}
+				]
+			}
+		]
+	}
+}

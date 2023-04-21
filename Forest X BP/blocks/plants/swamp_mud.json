@@ -1,0 +1,44 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:swamp_mud",
+			"register_to_creative_menu": true
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/empty.json",
+			"minecraft:destroy_time": 0.5,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:block_light_absorption": 0.8,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.swamp",
+				"category": "Nature"
+			},
+			"tag:plant": {},
+			"minecraft:block_light_emission": 0,
+			"minecraft:explosion_resistance": 5,
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "swamp_mud",
+					"render_method": "blend"
+				}
+			},
+			"minecraft:entity_collision": false,
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					1,
+					16
+				]
+			},
+			"minecraft:geometry": "geometry.grass"
+		},
+		"events": {}
+	}
+}

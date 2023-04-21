@@ -1,0 +1,92 @@
+//bridge-file-version: #5
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:saw",
+			"properties": {
+				"furniture:face": [
+					1,
+					2,
+					3,
+					4,
+					5,
+					6
+				]
+			}
+		},
+		"components": {
+			"minecraft:destroy_time": 1.5,
+			"minecraft:friction": 0.7,
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_emission": 0,
+			"minecraft:explosion_resistance": 10,
+			"minecraft:crafting_table": {
+				"grid_size": 3,
+				"crafting_tags": [
+					"saw"
+				]
+			},
+			"minecraft:on_player_placing": {
+				"event": "furniture:place"
+			},
+			"tag:wood": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "saw"
+				}
+			},
+			"minecraft:geometry": "geometry.block",
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.CraftingTable",
+				"category": "Items"
+			}
+		},
+		"events": {
+			"furniture:place": {
+				"set_block_property": {
+					"furniture:face": "(query.cardinal_facing_2d)"
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('furniture:face') == 2",
+				"components": {
+					"minecraft:block_light_emission": 0
+				}
+			},
+			{
+				"condition": "query.block_property('furniture:face') == 3",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						180,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('furniture:face') == 4",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						90,
+						0
+					]
+				}
+			},
+			{
+				"condition": "query.block_property('furniture:face') == 5",
+				"components": {
+					"minecraft:rotation": [
+						0,
+						270,
+						0
+					]
+				}
+			}
+		]
+	}
+}

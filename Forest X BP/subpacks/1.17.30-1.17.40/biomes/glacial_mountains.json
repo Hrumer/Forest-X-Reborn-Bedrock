@@ -1,0 +1,61 @@
+{
+	"format_version": "1.15.0",
+	"minecraft:biome": {
+		"description": {
+			"identifier": "glacial_mountains"
+		},
+		"components": {
+			"minecraft:climate": {
+				"downfall": 0.1,
+				"snow_accumulation": [
+					0,
+					0.125
+				],
+				"temperature": 0
+			},
+			"minecraft:overworld_height": {
+				"noise_params": [
+					6.5,
+					8
+				]
+			},
+			"overworld": {},
+			"glacial_mountains": {},
+			"monster": {},
+			"mountain": {},
+			"minecraft:surface_parameters": {
+				"top_material": "minecraft:snow",
+				"mid_material": "minecraft:dirt",
+				"foundation_material": "minecraft:stone",
+				"sea_floor_material": "minecraft:sand",
+				"sea_material": "minecraft:water",
+				"sea_floor_depth": 12
+			},
+			"minecraft:overworld_generation_rules": {
+				"mutate_transformation": [
+					"cold_taiga_hills"
+				],
+				"generate_for_climates": [
+					[
+						"frozen",
+						1
+					]
+				]
+			},
+			"minecraft:surface_material_adjustments": {
+				"adjustments": [
+					{
+						"materials": {
+							"top_material": "minecraft:ice",
+							"mid_material": "minecraft:packed_ice"
+						},
+						"noise_range": [
+							0.6,
+							1
+						]
+					}
+				]
+			}
+		}
+	}
+}

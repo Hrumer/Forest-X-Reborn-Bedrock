@@ -1,0 +1,25 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:rice_straw_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"###",
+			"###",
+			"###"
+		],
+		"key": {
+			"#": {
+				"item": "forest:rice_straw"
+			}
+		},
+		"result": {
+			"item": "forest:rice_straw_block"
+		}
+	}
+}

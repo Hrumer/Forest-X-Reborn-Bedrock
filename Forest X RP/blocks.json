@@ -1,0 +1,626 @@
+//bridge-file-version: #12
+{
+	"format_version": [
+		1,
+		1,
+		0
+	],
+	"forest:bush_blackberry": {
+		"sound": "sweet_berry_bush"
+	},
+	"forest:bush_blueberry": {
+		"sound": "sweet_berry_bush"
+	},
+	"forest:bush_cranberry": {
+		"sound": "sweet_berry_bush"
+	},
+	"forest:bush_raspberry": {
+		"sound": "sweet_berry_bush"
+	},
+	"forest:baobab_sapling": {
+		"sound": "grass"
+	},
+	"forest:cherry_sapling": {
+		"sound": "grass"
+	},
+	"forest:lemon_sapling": {
+		"sound": "grass"
+	},
+	"forest:maple_sapling": {
+		"sound": "grass"
+	},
+	"forest:palm_sapling": {
+		"sound": "grass"
+	},
+	"forest:peach_sapling": {
+		"sound": "grass"
+	},
+	"forest:pear_sapling": {
+		"sound": "grass"
+	},
+	"forest:sakura_sapling": {
+		"sound": "grass"
+	},
+	"forest:willow_sapling": {
+		"sound": "grass"
+	},
+	"forest:baobab_leaves": {
+		"sound": "grass",
+		"textures": "babobab_leaves"
+	},
+	"forest:burned_leaves": {
+		"sound": "grass",
+		"textures": "burned_leaves"
+	},
+	"forest:cherry_leaves": {
+		"sound": "grass",
+		"textures": "forest_cherry_leaves0"
+	},
+	"forest:lemon_leaves": {
+		"sound": "grass",
+		"textures": "forest_lemon_leaves0"
+	},
+	"forest:palm_leaves": {
+		"sound": "grass",
+		"textures": "palm_leaves"
+	},
+	"forest:peach_leaves": {
+		"sound": "grass",
+		"textures": "forest_pear_leaves0"
+	},
+	"forest:pear_leaves": {
+		"sound": "grass",
+		"textures": "forest_pear_leaves0"
+	},
+	"forest:sakura_leaves": {
+		"sound": "grass",
+		"textures": "forest_sakura_leaves"
+	},
+	"forest:maple_leaves": {
+		"sound": "grass",
+		"textures": "maple_leaves"
+	},
+	"forest:willow_leaves": {
+		"sound": "grass",
+		"textures": "willow_leaves"
+	},
+	"forest:baobab_log": {
+		"sound": "wood"
+	},
+	"forest:burned_log": {
+		"sound": "wood"
+	},
+	"forest:cherry_log": {
+		"sound": "wood"
+	},
+	"forest:lemon_log": {
+		"sound": "wood"
+	},
+	"forest:palm_log": {
+		"sound": "wood"
+	},
+	"forest:peach_log": {
+		"sound": "wood"
+	},
+	"forest:pear_log": {
+		"sound": "wood"
+	},
+	"forest:sakura_log": {
+		"sound": "wood"
+	},
+	"forest:maple_log": {
+		"sound": "wood"
+	},
+	"forest:willow_log": {
+		"sound": "wood"
+	},
+	"forest:baobab_planks": {
+		"sound": "wood",
+		"textures": "baobab_planks"
+	},
+	"forest:burned_planks": {
+		"sound": "wood",
+		"textures": "burned_planks"
+	},
+	"forest:cherry_planks": {
+		"sound": "wood",
+		"textures": "forest_cherry_planks"
+	},
+	"forest:lemon_planks": {
+		"sound": "wood",
+		"textures": "forest_lemon_planks"
+	},
+	"forest:palm_planks": {
+		"sound": "wood",
+		"textures": "palm_planks"
+	},
+	"forest:peach_planks": {
+		"sound": "wood",
+		"textures": "forest_peach_planks"
+	},
+	"forest:pear_planks": {
+		"sound": "wood",
+		"textures": "forest_pear_planks"
+	},
+	"forest:sakura_planks": {
+		"sound": "wood",
+		"textures": "forest_sakura_planks"
+	},
+	"forest:maple_planks": {
+		"sound": "wood",
+		"textures": "maple_planks"
+	},
+	"forest:willow_planks": {
+		"sound": "wood",
+		"textures": "willow_planks"
+	},
+	"forest:baobab_wood": {
+		"sound": "wood",
+		"textures": "baobab_log_side"
+	},
+	"forest:cherry_wood": {
+		"sound": "wood",
+		"textures": "forest_cherry_log_side"
+	},
+	"forest:lemon_wood": {
+		"sound": "wood",
+		"textures": "forest_lemon_wood_side"
+	},
+	"forest:palm_wood": {
+		"sound": "wood",
+		"textures": "palm_log"
+	},
+	"forest:peach_wood": {
+		"sound": "wood",
+		"textures": "forest_peach_wood_side"
+	},
+	"forest:pear_wood": {
+		"sound": "wood",
+		"textures": "forest_pear_log_side"
+	},
+	"forest:sakura_wood": {
+		"sound": "wood",
+		"textures": "forest_sakura_wood_side"
+	},
+	"forest:maple_wood": {
+		"sound": "wood",
+		"textures": "maple_log"
+	},
+	"forest:willow_wood": {
+		"sound": "wood",
+		"textures": "willow_log_side"
+	},
+	"forest:burning_blossom": {
+		"sound": "grass"
+	},
+	"forest:lavender": {
+		"sound": "grass"
+	},
+	"forest:wildflower": {
+		"sound": "grass"
+	},
+	"forest:ash_cover": {
+		"textures": "ash_block",
+		"sound": "sand"
+	},
+	"forest:strawberry_seed": {
+		"sound": "grass"
+	},
+	"forest:tomato_seed": {
+		"sound": "grass"
+	},
+	"forest:grape_vine0": {
+		"textures": "grape_vine",
+		"sound": "grass"
+	},
+	"forest:grape_vine1": {
+		"textures": "grape_vine",
+		"sound": "grass"
+	},
+	"forest:silver_ore": {
+		"textures": "silver_ore",
+		"sound": "stone"
+	},
+	"forest:silver_block": {
+		"textures": "silver_block",
+		"sound": "netherite"
+	},
+	"forest:crystal_block": {
+		"textures": "crystal_block",
+		"sound": "glass"
+	},
+	"forest:crystal": {
+		"textures": "crystal",
+		"sound": "glass"
+	},
+	"forest:crystal_block_blue": {
+		"textures": "crystal_block_blue",
+		"sound": "glass"
+	},
+	"forest:crystal_block_brown": {
+		"textures": "crystal_block_brown",
+		"sound": "glass"
+	},
+	"forest:crystal_block_gray": {
+		"textures": "crystal_block_gray",
+		"sound": "glass"
+	},
+	"forest:crystal_block_green": {
+		"textures": "crystal_block_green",
+		"sound": "glass"
+	},
+	"forest:crystal_block_light_blue": {
+		"textures": "crystal_block_light_blue",
+		"sound": "glass"
+	},
+	"forest:crystal_block_lime": {
+		"textures": "crystal_block_lime",
+		"sound": "glass"
+	},
+	"forest:crystal_block_orange": {
+		"textures": "crystal_block_orange",
+		"sound": "glass"
+	},
+	"forest:crystal_block_pink": {
+		"textures": "crystal_block_pink",
+		"sound": "glass"
+	},
+	"forest:crystal_block_purple": {
+		"textures": "crystal_block_purple",
+		"sound": "glass"
+	},
+	"forest:crystal_block_purpler": {
+		"textures": "crystal_block_purpler",
+		"sound": "glass"
+	},
+	"forest:crystal_block_red": {
+		"textures": "crystal_block_red",
+		"sound": "glass"
+	},
+	"forest:crystal_block_yellow": {
+		"textures": "crystal_block_yellow",
+		"sound": "glass"
+	},
+	"forest:sunshroom": {
+		"sound": "shroomlight"
+	},
+	"forest:moonshroom": {
+		"sound": "shroomlight"
+	},
+	"forest:marble_slab": {
+		"sound": "basalt"
+	},
+	"forest:marble_stairs": {
+		"sound": "basalt"
+	},
+	"forest:marble_bricks_slab": {
+		"sound": "basalt"
+	},
+	"forest:marble_bricks_stairs": {
+		"sound": "basalt"
+	},
+	"forest:marble": {
+		"sound": "basalt",
+		"textures": "marble"
+	},
+	"forest:marble_bricks": {
+		"sound": "basalt",
+		"textures": "marble_bricks"
+	},
+	"forest:marble_polished_slab": {
+		"sound": "basalt"
+	},
+	"forest:marble_polished_stairs": {
+		"sound": "basalt"
+	},
+	"forest:marble_polished": {
+		"sound": "basalt",
+		"textures": "marble_polished"
+	},
+	"forest:salted_block": {
+		"textures": "salt",
+		"sound": "sand"
+	},
+	"forest:rock_salt": {
+		"textures": "rock_salt",
+		"sound": "stone"
+	},
+	"forest:crushed_sandstone": {
+		"textures": "crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:red_crushed_sandstone": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:desert_flower": {
+		"sound": "grass"
+	},
+	"forest:quicksand": {
+		"textures": "quicksand",
+		"sound": "gravel"
+	},
+	"forest:crushed_slab": {
+		"sound": "stone"
+	},
+	"forest:crushed_stairs": {
+		"sound": "stone"
+	},
+	"forest:red_crushed_slab": {
+		"sound": "stone"
+	},
+	"forest:red_crushed_stairs": {
+		"sound": "stone"
+	},
+	"forest:coco_block": {
+		"sound": "wood"
+	},
+	"forest:ash_block": {
+		"textures": "ash_block",
+		"sound": "sand"
+	},
+	"forest:fossil_stone": {
+		"textures": {
+			"up": "fossil_stone.top",
+			"down": "fossil_stone.bottom",
+			"side": "fossil_stone.side"
+		},
+		"sound": "stone"
+	},
+	"forest:saw": {
+		"sound": "wood"
+	},
+	"forest:acacia_parquet": {
+		"textures": "acacia_parquet",
+		"sound": "wood"
+	},
+	"forest:birch_parquet": {
+		"textures": "birch_parquet",
+		"sound": "wood"
+	},
+	"forest:dark_oak_parquet": {
+		"textures": "dark_oak_parquet",
+		"sound": "wood"
+	},
+	"forest:jungle_parquet": {
+		"textures": "jungle_parquet",
+		"sound": "wood"
+	},
+	"forest:oak_parquet": {
+		"textures": "oak_parquet",
+		"sound": "wood"
+	},
+	"forest:spruce_parquet": {
+		"textures": "spruce_parquet",
+		"sound": "wood"
+	},
+	"forest:cherry_parquet": {
+		"textures": "cherry_parquet",
+		"sound": "wood"
+	},
+	"forest:sakura_parquet": {
+		"textures": "sakura_parquet",
+		"sound": "wood"
+	},
+	"forest:peach_parquet": {
+		"textures": "peach_parquet",
+		"sound": "wood"
+	},
+	"forest:pear_parquet": {
+		"textures": "pear_parquet",
+		"sound": "wood"
+	},
+	"forest:lemon_parquet": {
+		"textures": "lemon_parquet",
+		"sound": "wood"
+	},
+	"forest:crimson_parquet": {
+		"textures": "crimson_parquet",
+		"sound": "wood"
+	},
+	"forest:warped_parquet": {
+		"textures": "warped_parquet",
+		"sound": "wood"
+	},
+	"forest:deepslate_silver_ore": {
+		"textures": "deepslate_silver_ore",
+		"sound": "deepslate"
+	},
+	"forest:deepslate_rock_salt": {
+		"textures": "deepslate_rock_salt",
+		"sound": "deepslate"
+	},
+	"forest:salt_block": {
+		"textures": {
+			"up": "forest_salt_block_up",
+			"down": "forest_salt_block_down",
+			"side": "forest_salt_block_side"
+		},
+		"sound": "sand"
+	},
+	"forest:rice_seed": {
+		"sound": "grass"
+	},
+	"forest:rice_straw_block": {
+		"textures": {
+			"up": "rice_straw_block_end",
+			"down": "rice_straw_block_end",
+			"side": "rice_straw_block_side"
+		},
+		"sound": "grass"
+	},
+	"forest:cotton_seed": {
+		"sound": "grass"
+	},
+	"forest:raw_silver_block": {
+		"textures": "raw_silver_block",
+		"sound": "stone"
+	},
+	"forest:rhyolite": {
+		"textures": "rhyolite",
+		"sound": "stone"
+	},
+	"forest:sapphire_ore": {
+		"textures": "sapphire_ore",
+		"sound": "stone"
+	},
+	"forest:deepslate_sapphire_ore": {
+		"textures": "deepslate_sapphire_ore",
+		"sound": "deepslate"
+	},
+	"forest:brick_rhyolite": {
+		"textures": "brick_rhyolite",
+		"sound": "stone"
+	},
+	"forest:smooth_rhyolite": {
+		"textures": "smooth_rhyolite",
+		"sound": "stone"
+	},
+	"forest:polished_rhyolite": {
+		"textures": "polished_rhyolite",
+		"sound": "stone"
+	},
+	"forest:black_window_block": {
+		"textures": "black_window_block",
+		"sound": "glass"
+	},
+	"forest:window_block": {
+		"textures": "window_block",
+		"sound": "glass"
+	},
+	"forest:ancient_jukebox": {
+		"textures": "ancient_jukebox",
+		"sound": "wood"
+	},
+	"forest:ancient_jukebox_egypt": {
+		"textures": "ancient_jukebox",
+		"sound": "wood"
+	},
+	"forest:ancient_jukebox_zodiak": {
+		"textures": "ancient_jukebox",
+		"sound": "wood"
+	},
+	"forest:sapphire_block": {
+		"textures": "sapphire_block",
+		"sound": "metal"
+	},
+	"forest:peat": {
+		"textures": "peat",
+		"sound": "gravel"
+	},
+	"forest:amber_block": {
+		"textures": "amber_block",
+		"sound": "metal"
+	},
+	"forest:amber_streak": {
+		"sound": "stone"
+	},
+	"forest:swamp_mud": {
+		"sound": "moss_carpet"
+	},
+	"forest:palm_slab": {
+		"sound": "wood"
+	},
+	"forest:willow_slab": {
+		"sound": "wood"
+	},
+	"forest:baobab_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:cherry_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:lemon_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:palm_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:peach_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:pear_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:maple_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:sakura_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:willow_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:baobab_fence": {
+		"sound": "wood"
+	},
+	"forest:cherry_fence": {
+		"sound": "wood"
+	},
+	"forest:lemon_fence": {
+		"sound": "wood"
+	},
+	"forest:palm_fence": {
+		"sound": "wood"
+	},
+	"forest:peach_fence": {
+		"sound": "wood"
+	},
+	"forest:pear_fence": {
+		"sound": "wood"
+	},
+	"forest:maple_fence": {
+		"sound": "wood"
+	},
+	"forest:sakura_fence": {
+		"sound": "wood"
+	},
+	"forest:willow_fence": {
+		"sound": "wood"
+	},
+	"forest:cattail": {
+		"sound": "grass"
+	},
+	"forest:pumice": {
+                "textures": "pumice",
+		"sound": "basalt"
+	},
+	"forest:sulfur_ore": {
+		"textures": "sulfur_ore",
+		"sound": "stone"
+	},
+	"forest:deepslate_sulfur_ore": {
+		"textures": "deepslate_sulfur_ore",
+		"sound": "deepslate"
+	},
+	"forest:cast_iron_block": {
+		"textures": "cast_iron_block",
+		"sound": "anvil"
+	},
+	"forest:banana_leaves": {
+		"sound": "grass"
+	},
+	"forest:banana_log": {
+		"sound": "wood"
+	},
+	"forest:banana_planks": {
+                "textures": "banana_planks",
+		"sound": "wood"
+	},
+	"forest:banana_slab": {
+		"sound": "wood"
+	},
+	"forest:banana_stairs": {
+		"sound": "wood"
+	},
+	"forest:banana_fence": {
+		"sound": "wood"
+	},
+	"forest:banana_fence_gate": {
+		"sound": "wood"
+	},
+	"forest:dense_web": {
+		"textures": "dense_web",
+		"sound": "cloth"
+	}
+}

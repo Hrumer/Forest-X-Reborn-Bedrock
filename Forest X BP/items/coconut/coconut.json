@@ -1,0 +1,49 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:coconut",
+			"category": "nature"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.crop"
+			},
+			"minecraft:hand_equipped": false,
+			"minecraft:max_stack_size": 1,
+			"minecraft:stacked_by_data": false,
+			"minecraft:food": {
+				"nutrition": 3,
+				"can_always_eat": false,
+				"saturation_modifier": "normal",
+				"on_consume": {
+					"event": "forest:clean_effect"
+				},
+				"using_converts_to": "forest:coconut_open"
+			},
+			"minecraft:icon": {
+				"texture": "coconut"
+			},
+			"minecraft:use_animation": "eat",
+			"minecraft:throwable": {
+				"do_swing_animation": true,
+				"launch_power_scale": 3,
+				"max_draw_duration": 2,
+				"scale_power_by_draw_duration": true
+			},
+			"minecraft:use_duration": 1.6,
+			"minecraft:block_placer": {
+				"block": "forest:coco_block"
+			},
+			"minecraft:render_offsets": "apple"
+		},
+		"events": {
+			"forest:clean_effect": {
+				"remove_mob_effect": {
+					"target": "holder",
+					"effect": "hunger"
+				}
+			}
+		}
+	}
+}

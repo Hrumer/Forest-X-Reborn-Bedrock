@@ -1,0 +1,21 @@
+{
+	"format_version": "1.16.0",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:salt_block"
+		},
+		"components": {
+			"minecraft:loot": "loot_tables/blocks/forest_salt_block.json",
+			"minecraft:destroy_time": 0.5,
+			"minecraft:friction": 0.7,
+			"minecraft:creative_category": {
+				"group": "ItemGroup.name.SaltBlock",
+				"category": "Nature"
+			},
+			"minecraft:map_color": "#FFFFFF",
+			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_emission": 0,
+			"minecraft:explosion_resistance": 1
+		}
+	}
+}

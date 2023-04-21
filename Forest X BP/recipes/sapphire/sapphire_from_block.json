@@ -1,0 +1,24 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:sapphire_from_block"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "forest:sapphire_block"
+			}
+		},
+		"result": {
+			"item": "forest:sapphire",
+			"count": 9
+		}
+	}
+}

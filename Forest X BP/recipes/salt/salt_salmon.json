@@ -1,0 +1,30 @@
+//bridge-file-version: #1
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "salt_salmon"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			" A ",
+			"BBB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:salmon",
+				"data": 0
+			},
+			"B": {
+				"item": "forest:salt",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "forest:salt_salmon",
+			"count": 1
+		}
+	}
+}

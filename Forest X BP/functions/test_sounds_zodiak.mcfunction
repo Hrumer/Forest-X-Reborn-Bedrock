@@ -1,0 +1,3 @@
+execute @s ~ ~ ~ say §aThe function was successfully completed!
+execute @s ~ ~ ~ say §5Sound Zodiak has been started...
+playsound record.zodiak @s ~ ~ ~

@@ -1,0 +1,20 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:cotton",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "cotton"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.crop"
+			},
+			"minecraft:stacked_by_data": true,
+			"minecraft:foil": false,
+			"minecraft:hand_equipped": false
+		}
+	}
+}

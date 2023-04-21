@@ -1,0 +1,29 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "forest:oak_parquet"
+    },
+
+    
+    "tags": [ "saw" ],
+    "pattern": [
+      "YXY",
+      "XXX",
+      "YXY"
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:planks",
+        "data": 0
+      },
+      "Y": {
+        "item": "forest:crystal_dust"
+      }
+    },
+    "result": {
+      "item": "forest:oak_parquet",
+      "count": 4
+    }
+  }
+}

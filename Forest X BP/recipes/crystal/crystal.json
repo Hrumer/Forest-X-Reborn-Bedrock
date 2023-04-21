@@ -1,0 +1,24 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:crystal"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"#"
+		],
+		"key": {
+			"#": {
+				"item": "forest:crystal"
+			}
+		},
+		"result": {
+			"item": "forest:crystal_dust",
+			"count": 9
+		}
+	}
+}

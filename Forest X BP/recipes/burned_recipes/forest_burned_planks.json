@@ -1,0 +1,24 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "burned_planks"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      "B"
+    ],
+    "key": {
+      "B": {
+        "item": "forest:burned_log",
+        "data": 0
+      }
+    },
+    "result": {
+      "item": "forest:burned_planks",
+      "count": 2
+    }
+  }
+}

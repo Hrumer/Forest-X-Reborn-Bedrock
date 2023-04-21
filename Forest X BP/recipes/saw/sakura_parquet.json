@@ -1,0 +1,28 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+    "identifier": "forest:sakura_parquet"
+    },
+
+    
+    "tags": [ "saw" ],
+    "pattern": [
+      "YXY",
+      "XXX",
+      "YXY"
+    ],
+    "key": {
+      "X": {
+        "item": "forest:sakura_planks"
+      },
+      "Y": {
+        "item": "forest:crystal_dust"
+      }
+    },
+    "result": {
+      "item": "forest:sakura_parquet",
+      "count": 4
+    }
+  }
+}
