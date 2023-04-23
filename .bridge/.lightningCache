@@ -8,7 +8,7 @@ projects/Forest-X-Reborn-Bedrock/RP/textures/flipbook_texture.json|1682087133
 #lootTable
 projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/crushed_sandstone_slab_double.json|1682091071|{"lootTablePath":[]}
 projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_leaves.json|1632857474|{"lootTablePath":[]}
-projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_slab_double.json|1682253092938|{"lootTablePath":[]}
+projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_slab_double.json|1682253092|{"lootTablePath":[]}
 #block
 projects/Forest-X-Reborn-Bedrock/BP/blocks/silver/silver_block.json|1682098334|{"identifier":["forest:silver_block"],"event":[],"texture":["silver_block"],"tag":["metal"]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/crushed_sandstone/crushed_sandstone.json|1682097233|{"identifier":["forest:crushed_sandstone"],"texture":["crushed_sandstone"],"tag":["stone","wood_pick_diggable"]}
@@ -22,7 +22,7 @@ projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_wood.json|1682
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_stripped_log.json|1682250745|{"identifier":["forest:stripped_sakura_log"],"event":["bridge:become_stripped","bridge:update_rotation"],"eventReference":["bridge:update_rotation"],"property":["bridge:block_rotation"],"texture":["stripped_sakura_log_side","stripped_sakura_log_top"],"tag":["wood","log","stripped_log","fence-connectable"]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_planks.json|1682250752|{"identifier":["forest:sakura_planks"],"event":[],"texture":["sakura_planks"],"tag":["wood"]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_fence.json|1682250758|{"identifier":["forest:sakura_fence"],"event":["states","check_states"],"eventReference":["states"],"property":["test:states1","test:states2","test:states3","test:states4"],"geometryIdentifier":["geometry.fence"],"texture":["sakura_planks"],"tag":["wood","fence"]}
-projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_slab.json|1682253102164|{"identifier":["forest:sakura_slab"],"event":["forest:block","forest:up"],"eventReference":["forest:up","forest:block"],"property":["forest:slab"],"geometryIdentifier":["geometry.slab_down","geometry.slab_up"],"texture":["sakura_planks"],"tag":["wood"],"lootTablePath":["projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_slab_double.json"]}
+projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_slab.json|1682253101|{"identifier":["forest:sakura_slab"],"event":["forest:block","forest:up"],"eventReference":["forest:up","forest:block"],"property":["forest:slab"],"geometryIdentifier":["geometry.slab_down","geometry.slab_up"],"texture":["sakura_planks"],"tag":["wood"],"lootTablePath":["projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_slab_double.json"]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_leaves.json|1682249484|{"identifier":["forest:sakura_leaves"],"event":[],"geometryIdentifier":["geometry.leaves"],"texture":["sakura_petals"],"tag":[],"lootTablePath":["projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_leaves.json"]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_sapling.json|1632857474|{"identifier":["forest:sakura_sapling"],"event":["forest:sapling","forest:bone_meal"],"eventReference":["forest:bone_meal","forest:sapling"],"geometryIdentifier":["geometry.cross"],"texture":["sakura_sapling"],"tag":["plant"],"lootTablePath":["projects/Forest-X-Reborn-Bedrock/BP/loot_tables/blocks/sakura_sapling.json"],"entityTag":[],"scoreboardObjective":[],"functionPath":[]}
 projects/Forest-X-Reborn-Bedrock/BP/blocks/sakura_wood_set/sakura_fence_gate.json|1682250756|{"identifier":["forest:sakura_fence_gate"],"event":["forest:facing","forest:open","forest:close"],"eventReference":["forest:facing","forest:open","forest:close"],"property":["forest:facing","forest:open_bit","forest:mirror_bit"],"geometryIdentifier":["geometry.fence_gate","geometry.fence_gate_open_mirror","geometry.fence_gate_open"],"texture":["sakura_planks"],"tag":["wood"],"entityTag":[],"scoreboardObjective":[],"functionPath":[]}
@@ -42,7 +42,7 @@ projects/Forest-X-Reborn-Bedrock/RP/manifest.json|1682247413|{"uuid":["aa123684-
 #langDef
 projects/Forest-X-Reborn-Bedrock/RP/texts/languages.json|1682090325
 #clientLang
-projects/Forest-X-Reborn-Bedrock/RP/texts/en_US.lang|1682253285652|{"actionText":[]}
+projects/Forest-X-Reborn-Bedrock/RP/texts/en_US.lang|1682253285|{"actionText":[]}
 #texture
 projects/Forest-X-Reborn-Bedrock/RP/textures/blocks/acacia_parquet.png|1674920027
 projects/Forest-X-Reborn-Bedrock/RP/textures/blocks/birch_parquet.png|1674920027
@@ -253,10 +253,12 @@ projects/Forest-X-Reborn-Bedrock/BP/features/burning_blossom_feature.json|163285
 projects/Forest-X-Reborn-Bedrock/BP/features/wildflower_feature.json|1632857474|{"identifier":["forest:wildflower_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
 projects/Forest-X-Reborn-Bedrock/BP/features/desert_flower_feature.json|1632857474|{"identifier":["forest:desert_flower_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
 projects/Forest-X-Reborn-Bedrock/BP/features/lavender_feature.json|1632857474|{"identifier":["forest:lavender_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
+projects/Forest-X-Reborn-Bedrock/BP/features/sakura_tree_feature_mcstructure.json|1682253742|{"identifier":["forest:sakura_tree_feature_mcstructure"]}
 #featureRule
 projects/Forest-X-Reborn-Bedrock/BP/feature_rules/lavender_rules.json|1632857474|{"featureIdentifier":["forest:lavender_feature"],"identifier":["forest:lavender_rules"]}
 projects/Forest-X-Reborn-Bedrock/BP/feature_rules/burning_blossom_rules.json|1632857474|{"featureIdentifier":["forest:burning_blossom_feature"],"identifier":["forest:burning_blossom_rules"]}
 projects/Forest-X-Reborn-Bedrock/BP/feature_rules/wildflower_rules.json|1632857474|{"featureIdentifier":["forest:wildflower_feature"],"identifier":["forest:wildflower_rules"]}
 projects/Forest-X-Reborn-Bedrock/BP/feature_rules/desert_flower_rules.json|1632857474|{"featureIdentifier":["forest:desert_flower_feature"],"identifier":["forest:desert_flower_rules"]}
+projects/Forest-X-Reborn-Bedrock/BP/feature_rules/sakura_tree_feature_rule.json|1682253685|{"featureIdentifier":["forest:sakura_tree_feature_mcstructure"],"identifier":["forest:sakura_tree_feature_rule"]}
 #mcstructure
 projects/Forest-X-Reborn-Bedrock/BP/structures/sakura_tree.mcstructure|1632857474
