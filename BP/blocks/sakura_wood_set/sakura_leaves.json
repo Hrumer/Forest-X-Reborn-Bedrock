@@ -9,6 +9,7 @@
 			"minecraft:loot": "loot_tables/blocks/sakura_leaves.json",
 			"minecraft:destroy_time": 0.3,
 			"minecraft:friction": 0.5,
+			"tag:leaves": {},
 			"minecraft:map_color": "#FFFFFF",
 			"minecraft:light_dampening": 7.5,
 			"minecraft:creative_category": {
