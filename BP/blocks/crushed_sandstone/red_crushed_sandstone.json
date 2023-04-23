@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:red_crushed_sandstone"
+		},
+		"components": {
+			"minecraft:creative_category": {
+				"category": "construction"
+			},
+			"minecraft:destroy_time": 2.5,
+			"tag:stone": {},
+			"tag:wood_pick_diggable": {},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "red_crushed_sandstone",
+					"render_method": "opaque"
+				}
+			},
+			"minecraft:block_light_emission": 0,
+			"minecraft:block_light_absorption": 1,
+			"minecraft:friction": 0.6
+		}
+	}
+}

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "forest:crushed_sandstone_slab",
+			"identifier": "forest:red_crushed_sandstone_slab",
 			"properties": {
 				"forest:slab": [
 					0,
@@ -12,7 +12,7 @@
 			}
 		},
 		"components": {
-			"minecraft:destroy_time": 2.6,
+			"minecraft:destroy_time": 2.5,
 			"minecraft:creative_category": {
 				"group": "itemGroup.name.slab",
 				"category": "construction"
@@ -33,7 +33,7 @@
 					"minecraft:on_interact": {
 						"event": "forest:block",
 						"target": "self",
-						"condition": "query.get_equipped_item_name('main_hand')=='crushed_sandstone_slab'&&query.block_face==1"
+						"condition": "query.get_equipped_item_name('main_hand')=='red_crushed_sandstone_slab'&&query.block_face==1"
 					},
 					"minecraft:entity_collision": {
 						"origin": [
@@ -61,7 +61,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "crushed_sandstone",
+							"texture": "red_crushed_sandstone",
 							"render_method": "alpha_test"
 						}
 					}
@@ -75,7 +75,7 @@
 					"minecraft:on_interact": {
 						"event": "forest:block",
 						"target": "self",
-						"condition": "query.get_equipped_item_name('main_hand')=='crushed_sandstone_slab'&&query.block_face==0"
+						"condition": "query.get_equipped_item_name('main_hand')=='red_crushed_sandstone_slab'&&query.block_face==0"
 					},
 					"minecraft:entity_collision": {
 						"origin": [
@@ -103,7 +103,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "crushed_sandstone",
+							"texture": "red_crushed_sandstone",
 							"render_method": "alpha_test"
 						}
 					}
@@ -117,7 +117,7 @@
 					"minecraft:block_light_absorption": 15,
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "crushed_sandstone",
+							"texture": "red_crushed_sandstone",
 							"render_method": "opaque"
 						}
 					}

@@ -2,7 +2,7 @@
 	"format_version": "1.16.201",
 	"minecraft:block": {
 		"description": {
-			"identifier": "forest:crushed_stairs",
+			"identifier": "forest:red_crushed_stairs",
 			"properties": {
 				"forest:facing": [
 					2,
@@ -28,20 +28,20 @@
 				"group": "itemGroup.name.stairs",
 				"category": "construction"
 			},
-			"minecraft:destroy_time": 2.1,
+			"minecraft:destroy_time": 2.5,
 			"minecraft:explosion_resistance": 4.2,
 			"tag:stone": {},
 			"minecraft:material_instances": {
 				"up": {
-					"texture": "crushed_sandstone",
+					"texture": "red_crushed_sandstone",
 					"render_method": "opaque"
 				},
 				"down": {
-					"texture": "crushed_sandstone",
+					"texture": "red_crushed_sandstone",
 					"render_method": "opaque"
 				},
 				"*": {
-					"texture": "crushed_sandstone",
+					"texture": "red_crushed_sandstone",
 					"render_method": "opaque"
 				}
 			},

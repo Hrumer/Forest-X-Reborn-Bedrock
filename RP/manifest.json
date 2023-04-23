@@ -34,9 +34,7 @@
 			"memory_tier": 1
 		}
 	],
-	"capabilities": [
-		"raytraced"
-	],
+	"capabilities": [],
 	"metadata": {
 		"generated_with": {
 			"bridge": [

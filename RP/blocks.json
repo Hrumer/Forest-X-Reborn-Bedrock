@@ -15,5 +15,58 @@
 	"forest:crushed_sandstone_stairs": {
 		"textures": "crushed_sandstone",
 		"sound": "stone"
+	},
+	"forest:red_crushed_sandstone_stairs": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:red_crushed_sandstone_slab": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:red_crushed_sandstone": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:silver_block": {
+		"textures": "silver_block",
+		"sound": "metal"
+	},
+	"forest:raw_silver_block": {
+		"textures": "raw_silver_block",
+		"sound": "metal"
+	},
+	"forest:sakura_wood": {
+		"textures": "sakura_log_side",
+		"sound": "wood"
+	},
+	"forest:sakura_log": {
+		"sound": "wood"
+	},
+	"forest:stripped_sakura_log": {
+		"sound": "wood"
+	},
+	"forest:sakura_planks": {
+		"textures": "sakura_planks",
+		"sound": "wood"
+	},
+	"forest:sakura_sapling": {
+		"textures": "sakura_sapling",
+		"sound": "grass"
+	},
+	"forest:sakura_trapdoor": {
+		"textures": "sakura_trapdoor",
+		"sound": "wood"
+	},
+	"forest:sakura_leaves": {
+		"textures": "sakura_petals",
+		"sound": "grass"
+	},
+	"forest:sakura_parquet": {
+		"textures": "sakura_parquet",
+		"sound": "wood"
+	},
+	"forest:stripped_sakura_wood": {
+		"sound": "wood"
 	}
 }

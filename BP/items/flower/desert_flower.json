@@ -1,0 +1,24 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:item": {
+		"description": {
+			"identifier": "forest:desert_flower_item",
+			"category": "Nature"
+		},
+		"components": {
+			"minecraft:icon": {
+				"texture": "desert_flower"
+			},
+			"minecraft:creative_category": {
+				"parent": "itemGroup.name.flower"
+			},
+			"minecraft:block_placer": {
+				"block": "forest:desert_flower"
+			},
+			"minecraft:display_name": {
+				"value": "item.forest:desert_flower"
+			}
+		},
+		"events": {}
+	}
+}
