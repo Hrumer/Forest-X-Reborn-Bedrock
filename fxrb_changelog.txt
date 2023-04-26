@@ -1,5 +1,5 @@
 fxrb-0.0.2-ea:
-- 
+- Added all block of parquet
 - [Bugfix] More fixes bugs
 
 1.0.0-release:

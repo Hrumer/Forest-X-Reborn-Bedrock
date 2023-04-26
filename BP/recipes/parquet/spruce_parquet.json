@@ -1,0 +1,26 @@
+{
+  "format_version": "1.12",
+  "minecraft:recipe_shaped": {
+    "description": {
+      "identifier": "forest:spruce_parquet"
+    },
+    "tags": [
+      "crafting_table"
+    ],
+    "pattern": [
+      " X ",
+      "XXX",
+      " X "
+    ],
+    "key": {
+      "X": {
+        "item": "minecraft:planks",
+        "data": 1
+      }
+    },
+    "result": {
+      "item": "forest:spruce_parquet",
+      "count": 4
+    }
+  }
+}

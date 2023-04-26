@@ -63,6 +63,51 @@
 		},
 		"desert_flower": {
 			"textures": "textures/blocks/desert_flower"
+		},
+		"acacia_parquet": {
+			"textures": [
+				"textures/blocks/acacia_parquet"
+			]
+		},
+		"birch_parquet": {
+			"textures": [
+				"textures/blocks/birch_parquet"
+			]
+		},
+		"dark_oak_parquet": {
+			"textures": [
+				"textures/blocks/dark_oak_parquet"
+			]
+		},
+		"jungle_parquet": {
+			"textures": [
+				"textures/blocks/jungle_parquet"
+			]
+		},
+		"oak_parquet": {
+			"textures": [
+				"textures/blocks/oak_parquet"
+			]
+		},
+		"spruce_parquet": {
+			"textures": [
+				"textures/blocks/spruce_parquet"
+			]
+		},
+		"warped_parquet": {
+			"textures": [
+				"textures/blocks/warped_parquet"
+			]
+		},
+		"crimson_parquet": {
+			"textures": [
+				"textures/blocks/crimson_parquet"
+			]
+		},
+		"mangrove_parquet": {
+			"textures": [
+				"textures/blocks/mangrove_parquet"
+			]
 		}
 	}
 }

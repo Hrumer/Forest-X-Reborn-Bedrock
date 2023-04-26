@@ -1,0 +1,27 @@
+//bridge-file-version: #0
+{
+	"format_version": 1.12,
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:sakura_wood"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"group": "wood",
+		"pattern": [
+			"##",
+			"##"
+		],
+		"key": {
+			"#": {
+				"item": "forest:sakura_log",
+				"data": 0
+			}
+		},
+		"result": {
+			"item": "forest:sakura_wood",
+			"count": 3
+		}
+	}
+}

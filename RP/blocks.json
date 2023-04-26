@@ -66,6 +66,42 @@
 		"textures": "sakura_parquet",
 		"sound": "wood"
 	},
+	"forest:oak_parquet": {
+		"textures": "oak_parquet",
+		"sound": "wood"
+	},
+	"forest:dark_oak_parquet": {
+		"textures": "dark_oak_parquet",
+		"sound": "wood"
+	},
+	"forest:birch_parquet": {
+		"textures": "birch_parquet",
+		"sound": "wood"
+	},
+	"forest:spruce_parquet": {
+		"textures": "spruce_parquet",
+		"sound": "wood"
+	},
+	"forest:tropical_parquet": {
+		"textures": "jungle_parquet",
+		"sound": "wood"
+	},
+	"forest:acacia_parquet": {
+		"textures": "acacia_parquet",
+		"sound": "wood"
+	},
+	"forest:crimson_parquet": {
+		"textures": "crimson_parquet",
+		"sound": "wood"
+	},
+	"forest:warped_parquet": {
+		"textures": "warped_parquet",
+		"sound": "wood"
+	},
+	"forest:mangrove_parquet": {
+		"textures": "mangrove_parquet",
+		"sound": "wood"
+	},
 	"forest:stripped_sakura_wood": {
 		"sound": "wood"
 	},
