@@ -68,5 +68,17 @@
 	},
 	"forest:stripped_sakura_wood": {
 		"sound": "wood"
+	},
+	"forest:burning_blossom": {
+		"sound": "grass"
+	},
+	"forest:lavender": {
+		"sound": "grass"
+	},
+	"forest:wildflower": {
+		"sound": "grass"
+	},
+	"forest:desert_flower": {
+		"sound": "grass"
 	}
 }

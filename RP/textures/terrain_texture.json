@@ -51,6 +51,18 @@
 		},
 		"sakura_trapdoor": {
 			"textures": "textures/blocks/sakura_trapdoor"
+		},
+		"burning_blossom": {
+			"textures": "textures/blocks/burning_blossom"
+		},
+		"lavender": {
+			"textures": "textures/blocks/lavender"
+		},
+		"wildflower": {
+			"textures": "textures/blocks/wildflower"
+		},
+		"desert_flower": {
+			"textures": "textures/blocks/desert_flower"
 		}
 	}
 }
