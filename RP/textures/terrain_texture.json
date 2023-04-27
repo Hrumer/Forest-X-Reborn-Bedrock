@@ -108,6 +108,16 @@
 			"textures": [
 				"textures/blocks/mangrove_parquet"
 			]
+		},
+		"peat_top": {
+			"textures": [
+				"textures/blocks/peat_top"
+			]
+		},
+		"peat_side": {
+			"textures": [
+				"textures/blocks/peat_side"
+			]
 		}
 	}
 }

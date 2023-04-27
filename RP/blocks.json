@@ -116,5 +116,13 @@
 	},
 	"forest:desert_flower": {
 		"sound": "grass"
+	},
+	"forest:peat": {
+		"textures": {
+			"up": "peat_top",
+			"side": "peat_side",
+			"down": "peat_top"
+		},
+		"sound": "mud"
 	}
 }

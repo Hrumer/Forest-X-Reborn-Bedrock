@@ -8,7 +8,7 @@
 				"default": "fox"
 			},
 			"textures": {
-				"red": "textures/entity/racoon"
+				"default": "textures/entity/racoon"
 			},
 			"geometry": {
 				"default": "geometry.fox"
