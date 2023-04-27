@@ -47,6 +47,9 @@
 			},
 			"minecraft:destroy_time": 2,
 			"minecraft:explosion_resistance": 3,
+			"minecraft:on_placed": {
+				"event": "bridge:update_rotation"
+			},
 			"minecraft:on_player_placing": {
 				"event": "bridge:update_rotation"
 			}

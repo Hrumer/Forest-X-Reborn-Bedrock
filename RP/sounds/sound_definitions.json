@@ -1,0 +1,18 @@
+{
+	"format_version": "1.14.0",
+	"sound_definitions": {
+		"record.egypt": {
+			"category": "record",
+			"__use_legacy_max_distance": true,
+			"max_distance": 128,
+			"sounds": [
+				{
+					"load_on_low_memory": true,
+					"name": "sounds/music/egypt",
+					"stream": true,
+					"volume": 1
+				}
+			]
+		}
+	}
+}

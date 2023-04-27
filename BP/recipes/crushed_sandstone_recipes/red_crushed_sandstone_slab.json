@@ -1,0 +1,19 @@
+{
+	"format_version": 1.16,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "forest:red_crushed_sandstone_slab"
+		},
+		"tags": [
+			"stonecutter"
+		],
+		"ingredients": [
+			{
+				"item": "forest:red_crushed_sandstone"
+			}
+		],
+		"result": {
+			"item": "forest:red_crushed_sandstone_slab"
+		}
+	}
+}

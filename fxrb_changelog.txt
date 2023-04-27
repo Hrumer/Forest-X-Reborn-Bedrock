@@ -1,5 +1,7 @@
 fxrb-0.0.2-ea:
+- Added snail, racoon and brown bear
 - Added all block of parquet
+- Added crafts for crushed sandstone blocks
 - [Bugfix] More fixes bugs
 
 1.0.0-release:

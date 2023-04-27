@@ -6,7 +6,8 @@
 		},
 		"components": {
 			"minecraft:creative_category": {
-				"category": "construction"
+				"category": "construction",
+				"group": "construction"
 			},
 			"minecraft:destroy_time": 2.5,
 			"tag:stone": {},
