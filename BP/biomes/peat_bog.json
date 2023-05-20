@@ -10,14 +10,7 @@
 			"lukewarm": {},
 			"no_legacy_worldgen": {},
 			"overworld": {},
-			"minecraft:swamp_surface": {
-				"top_material": "forest:peat",
-				"mid_material": "minecraft:dirt",
-				"foundation_material": "minecraft:stone",
-				"sea_floor_material": "minecraft:clay",
-				"sea_floor_depth": 2,
-				"sea_material": "minecraft:water"
-			}
+			"minecraft:overworld_generation_rules": {}
 		}
 	}
 }

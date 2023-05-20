@@ -5,7 +5,7 @@
 	"authors": [
 		"MagicalAlexey"
 	],
-	"targetVersion": "1.19.60",
+	"targetVersion": "1.19.80",
 	"description": "About\nThe revival of the legendary Forest X Second Edition addon.",
 	"experimentalGameplay": {
 		"holidayCreatorFeatures": true,
@@ -13,7 +13,7 @@
 		"upcomingCreatorFeatures": true,
 		"enableGameTestFramework": true,
 		"experimentalMolangFeatures": true,
-		"educationEdition": true
+		"educationEdition": false
 	},
 	"bdsProject": false,
 	"packs": {

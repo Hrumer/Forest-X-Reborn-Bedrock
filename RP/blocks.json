@@ -28,6 +28,14 @@
 		"textures": "red_crushed_sandstone",
 		"sound": "stone"
 	},
+	"forest:red_crushed_sandstone_wall": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
+	"forest:crushed_sandstone_wall": {
+		"textures": "red_crushed_sandstone",
+		"sound": "stone"
+	},
 	"forest:silver_block": {
 		"textures": "silver_block",
 		"sound": "metal"

@@ -1,169 +1,125 @@
 {
-	"format_version": "1.16.220",
+	"format_version": "1.19.80",
 	"minecraft:block": {
 		"description": {
 			"identifier": "forest:sakura_fence",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.fence"
+			},
 			"properties": {
-				"test:states1": [
+				"test:NS": [
 					0,
-					1
+					1,
+					2,
+					3
 				],
-				"test:states2": [
+				"test:EW": [
 					0,
-					1
-				],
-				"test:states3": [
-					0,
-					1
-				],
-				"test:states4": [
-					0,
-					1
+					1,
+					2,
+					3
 				]
 			}
 		},
 		"components": {
-			"minecraft:unwalkable": true,
-			"minecraft:creative_category": {
-				"group": "itemGroup.name.fence",
-				"category": "construction"
-			},
-			"tag:wood": {},
-			"tag:fence": {},
-			"minecraft:block_light_absorption": 0,
-			"minecraft:destroy_time": 2,
-			"minecraft:geometry": "geometry.fence",
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "sakura_planks",
-					"render_method": "alpha_test"
-				}
-			},
-			"minecraft:entity_collision": {
-				"origin": [
-					-2,
-					0,
-					-2
-				],
-				"size": [
-					4,
-					16,
-					4
-				]
-			},
-			"minecraft:pick_collision": {
-				"origin": [
-					-2,
-					0,
-					-2
-				],
-				"size": [
-					4,
-					16,
-					4
-				]
-			},
-			"minecraft:ticking": {
-				"looping": true,
-				"range": [
-					0,
-					0
-				],
-				"on_tick": {
-					"event": "states",
-					"target": "self"
-				}
-			},
-			"minecraft:part_visibility": {
-				"rules": {
-					"n2": "query.block_property('test:states2') == 1",
-					"n1": "query.block_property('test:states1') == 1",
-					"n4": "query.block_property('test:states4') == 1",
-					"n3": "query.block_property('test:states3') == 1"
+					"render_method": "opaque"
+				},
+				"post": {
+					"texture": "sakura_planks",
+					"render_method": "opaque"
 				}
 			},
 			"minecraft:flammable": {
-				"flame_odds": 40,
-				"burn_odds": 30
-			}
+				"flame_odds": 15,
+				"burn_odds": 25
+			},
+			"minecraft:geometry": {
+				"identifier": "geometry.fence_post",
+				"bone_visibility": {
+					"north": false,
+					"south": false,
+					"east": false,
+					"west": false
+				}
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					0,
+					1
+				],
+				"on_tick": {
+					"event": "change_state"
+				}
+			},
+			"minecraft:unwalkable": true,
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 2.0
+			},
+			"minecraft:map_color": "#bca05e",
+			"minecraft:light_dampening": 0,
+			"tag:fence_connect": {},
+			"tag:wood": {}
 		},
 		"events": {
-			"states": {
+			"change_state": {
 				"sequence": [
 					{
-						"condition": "q.block_neighbor_has_any_tag(0,0,1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
+						"condition": "(!q.block_neighbor_has_any_tag(0,0,-1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(0,0,1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
 						"set_block_property": {
-							"test:states2": 1
+							"test:NS": 0
+						}
+					},
+					//North
+					{
+						"condition": "(q.block_neighbor_has_any_tag(0,0,-1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(0,0,1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
+						"set_block_property": {
+							"test:NS": 1
+						}
+					},
+					//South
+					{
+						"condition": "(q.block_neighbor_has_any_tag(0,0,1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(0,0,-1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
+						"set_block_property": {
+							"test:NS": 2
+						}
+					},
+					//North and South
+					{
+						"condition": "(q.block_neighbor_has_any_tag(0,0,-1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (q.block_neighbor_has_any_tag(0,0,1,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
+						"set_block_property": {
+							"test:NS": 3
 						}
 					},
 					{
-						"condition": "q.block_neighbor_has_any_tag(1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
+						"condition": "(!q.block_neighbor_has_any_tag(1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(-1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
 						"set_block_property": {
-							"test:states1": 1
+							"test:EW": 0
 						}
 					},
+					//East
 					{
-						"condition": "q.block_neighbor_has_any_tag(0,0,-1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
+						"condition": "(q.block_neighbor_has_any_tag(1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(-1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
 						"set_block_property": {
-							"test:states4": 1
+							"test:EW": 1
 						}
 					},
+					//West
 					{
-						"condition": "q.block_neighbor_has_any_tag(-1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
+						"condition": "(q.block_neighbor_has_any_tag(-1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (!q.block_neighbor_has_any_tag(1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
 						"set_block_property": {
-							"test:states3": 1
+							"test:EW": 2
 						}
 					},
+					//East and West
 					{
-						"condition": "!q.block_neighbor_has_any_tag(0,0,1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
+						"condition": "(q.block_neighbor_has_any_tag(-1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel')) && (q.block_neighbor_has_any_tag(1,0,0,'fence_connect', 'wood', 'grass', 'dirt', 'sand', 'gravel'))",
 						"set_block_property": {
-							"test:states2": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states1": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(0,0,-1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states4": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(-1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states3": 0
-						}
-					}
-				]
-			},
-			"check_states": {
-				"sequence": [
-					{
-						"condition": "!q.block_neighbor_has_any_tag(0,0,1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states2": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states1": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(0,0,-1,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states4": 0
-						}
-					},
-					{
-						"condition": "!q.block_neighbor_has_any_tag(-1,0,0,'fence','wood','stone','metal','diamond_pick_diggable','iron_pick_diggable','dirt','sand','gravel','grass')",
-						"set_block_property": {
-							"test:states3": 0
+							"test:EW": 3
 						}
 					}
 				]
@@ -171,9 +127,21 @@
 		},
 		"permutations": [
 			{
-				"condition": "query.block_property('test:states1') == 0 || query.block_property('test:states3') == 0 || query.block_property('test:states2') == 0 || query.block_property('test:states4') == 0",
+				"condition": "query.block_property('test:NS') == 0 && query.block_property('test:EW') == 0",
 				"components": {
-					"minecraft:entity_collision": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-3
+						],
+						"size": [
+							6,
+							16,
+							6
+						]
+					},
+					"minecraft:selection_box": {
 						"origin": [
 							-2,
 							0,
@@ -185,7 +153,70 @@
 							4
 						]
 					},
-					"minecraft:pick_collision": {
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"east": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							16,
+							11
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							4,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"south": false,
+							"east": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-3
+						],
+						"size": [
+							6,
+							16,
+							11
+						]
+					},
+					"minecraft:selection_box": {
 						"origin": [
 							-2,
 							0,
@@ -194,16 +225,479 @@
 						"size": [
 							4,
 							16,
-							4
+							10
 						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"east": false,
+							"west": false
+						}
 					}
 				}
 			},
 			{
-				"condition": "query.block_property('test:states1') == 1 || query.block_property('test:states3') == 1 || query.block_property('test:states2') == 1 || query.block_property('test:states4') == 1",
+				"condition": "query.block_property('test:NS') == 3",
 				"components": {
-					"minecraft:entity_collision": true,
-					"minecraft:pick_collision": true
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-8
+						],
+						"size": [
+							6,
+							16,
+							16
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							4,
+							16,
+							16
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"east": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-3
+						],
+						"size": [
+							11,
+							16,
+							6
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							10,
+							16,
+							4
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-3
+						],
+						"size": [
+							11,
+							16,
+							6
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-2
+						],
+						"size": [
+							10,
+							16,
+							4
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"south": false,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 3",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-8,
+							0,
+							-3
+						],
+						"size": [
+							16,
+							16,
+							6
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							4
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"south": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 1 && query.block_property('test:EW') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							10,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"south": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 1 && query.block_property('test:EW') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							10,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"south": false,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 2 && query.block_property('test:EW') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-3
+						],
+						"size": [
+							7,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							10,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 2 && query.block_property('test:EW') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-3
+						],
+						"size": [
+							7,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-2
+						],
+						"size": [
+							10,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false,
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 3 && query.block_property('test:EW') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-3,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							16,
+							8
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							10,
+							16,
+							16
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"west": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:NS') == 3 && query.block_property('test:EW') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							7,
+							16,
+							8
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-2,
+							0,
+							-8
+						],
+						"size": [
+							10,
+							16,
+							16
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"east": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 3 && query.block_property('test:NS') == 1",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"south": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 3 && query.block_property('test:NS') == 2",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-3
+						],
+						"size": [
+							8,
+							16,
+							7
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-2
+						],
+						"size": [
+							16,
+							16,
+							10
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post",
+						"bone_visibility": {
+							"north": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:EW') == 3 && query.block_property('test:NS') == 3",
+				"components": {
+					"minecraft:collision_box": {
+						"origin": [
+							-4,
+							0,
+							-4
+						],
+						"size": [
+							8,
+							16,
+							8
+						]
+					},
+					"minecraft:selection_box": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:geometry": {
+						"identifier": "geometry.fence_post"
+					}
 				}
 			}
 		]
