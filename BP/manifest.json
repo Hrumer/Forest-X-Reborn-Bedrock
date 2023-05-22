@@ -1,7 +1,7 @@
 {
 	"format_version": 2,
 	"header": {
-		"name": "Forest X Reborn v. 0.0.3 Early Alpha",
+		"name": "Forest X Reborn v. 0.0.4 Early Alpha",
 		"description": "The revival of the legendary Forest X Second Edition addon.",
 		"min_engine_version": [
 			1,
@@ -12,7 +12,7 @@
 		"version": [
 			0,
 			0,
-			3
+			4
 		]
 	},
 	"modules": [
@@ -23,7 +23,7 @@
 			"version": [
 				0,
 				0,
-				3
+				4
 			]
 		}
 	],
@@ -32,7 +32,7 @@
 			"version": [
 				0,
 				0,
-				3
+				4
 			],
 			"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213"
 		}
