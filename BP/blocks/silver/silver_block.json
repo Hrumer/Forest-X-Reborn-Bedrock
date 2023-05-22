@@ -10,8 +10,10 @@
 				"group": "itemGroup.name.metalBlock",
 				"category": "construction"
 			},
-			"minecraft:map_color": "#7C8185",
+			"minecraft:map_color": "#CDCFD1",
 			"minecraft:friction": 0.8,
+			"minecraft:block_light_absorption": 15,
+			"minecraft:block_light_emission": 0.13,
 			"minecraft:material_instances": {
 				"*": {
 					"texture": "silver_block",

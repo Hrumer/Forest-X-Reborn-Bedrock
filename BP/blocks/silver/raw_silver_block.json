@@ -6,10 +6,8 @@
 		},
 		"components": {
 			"minecraft:destroy_time": 3,
-			"minecraft:map_color": "#DADADA",
+			"minecraft:map_color": "#6B6A6A",
 			"minecraft:friction": 0.3,
-			"minecraft:block_light_absorption": 15,
-			"minecraft:block_light_emission": 0.13,
 			"minecraft:creative_category": {
 				"group": "itemGroup.name.rawBlock",
 				"category": "construction"
