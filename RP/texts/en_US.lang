@@ -52,3 +52,4 @@ item.spawn_egg.entity.forest:racoon.name=Spawn Egg Racoon
 item.forest:blueberry=Blueberry
 tile.forest:silver_ore.name=Silver Ore
 tile.forest:deepslate_silver_ore.name=Deepslate Silver Ore
+item.forest:blue_rose=Blue Rose

@@ -122,6 +122,9 @@
 	"forest:wildflower": {
 		"sound": "grass"
 	},
+	"forest:blue_rose": {
+		"sound": "grass"
+	},
 	"forest:desert_flower": {
 		"sound": "grass"
 	},

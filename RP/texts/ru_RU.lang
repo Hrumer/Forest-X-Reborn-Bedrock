@@ -52,3 +52,4 @@ item.spawn_egg.entity.forest:racoon.name=Создать енота
 item.forest:blueberry=Черника
 tile.forest:silver_ore.name=Серебряная руда
 tile.forest:deepslate_silver_ore.name=Глубинная серебряная руда
+item.forest:blue_rose=Синяя роза

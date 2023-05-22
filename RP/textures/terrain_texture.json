@@ -138,6 +138,11 @@
 			"textures": [
 				"textures/blocks/deepslate_silver_ore"
 			]
+		},
+		"blue_rose": {
+			"textures": [
+				"textures/blocks/blue_rose"
+			]
 		}
 	}
 }

@@ -11,6 +11,9 @@
 		"burning_blossom": {
 			"textures": "textures/items/burning_blossom"
 		},
+		"blue_rose": {
+			"textures": "textures/items/blue_rose"
+		},
 		"silver_ingot": {
 			"textures": [
 				"textures/items/silver_ingot"
