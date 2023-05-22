@@ -1,4 +1,5 @@
 fxrb-0.0.3-ea:
+- Add blueberries and blueberry bushes
 - The silver block now functions as on the Java version
 - [Bugfix] More fixes bugs
 

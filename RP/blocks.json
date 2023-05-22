@@ -132,5 +132,8 @@
 			"down": "peat_top"
 		},
 		"sound": "mud"
+	},
+	"forest:bush_blueberry": {
+		"sound": "sweet_berry_bush"
 	}
 }

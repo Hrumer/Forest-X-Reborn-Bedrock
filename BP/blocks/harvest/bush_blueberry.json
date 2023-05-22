@@ -1,0 +1,165 @@
+//bridge-file-version: #0
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:bush_blueberry",
+			"properties": {
+				"test:growth_stage": [
+					0,
+					1
+				]
+			}
+		},
+		"components": {
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "blueberry_bush0",
+					"render_method": "alpha_test"
+				}
+			},
+			"minecraft:geometry": "geometry.cross",
+			"minecraft:entity_collision": false,
+			"tag:plant": {},
+			"minecraft:pick_collision": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			},
+			"minecraft:destroy_time": 0,
+			"minecraft:friction": 0.6,
+			"minecraft:map_color": "#000000",
+			"minecraft:block_light_absorption": 0,
+			"minecraft:loot": "loot_tables/crops/empty.json",
+			"minecraft:on_interact": {
+				"event": "forest:bone_meal",
+				"condition": "query.get_equipped_item_name=='bone_meal'",
+				"target": "self"
+			},
+			"minecraft:random_ticking": {
+				"on_tick": {
+					"event": "grow_stage"
+				}
+			},
+			"minecraft:placement_filter": {
+				"conditions": [
+					{
+						"allowed_faces": [
+							"up"
+						],
+						"block_filter": [
+							"dirt",
+							"grass"
+						]
+					}
+				]
+			},
+			"minecraft:flammable": {
+				"burn_odds": 50,
+				"flame_odds": 60
+			}
+		},
+		"events": {
+			"grow_stage": {
+				"randomize": [
+					{
+						"weight": 1
+					},
+					{
+						"weight": 1,
+						"set_block_property": {
+							"test:growth_stage": "(query.block_property('test:growth_stage')<1) ? query.block_property('test:growth_stage') + 1 : 1"
+						}
+					}
+				]
+			},
+			"forest:bone_meal": {
+				"trigger": {
+					"event": "grow_stage",
+					"condition": "query.get_equipped_item_name=='bone_meal'",
+					"target": "self"
+				},
+				"decrement_stack": {},
+				"run_command": {
+					"target": "self",
+					"command": [
+						"playsound item.bone_meal.use @a[r=25] ~~~ 1.0"
+					]
+				}
+			},
+			"give_berries": {
+				"spawn_loot": {
+					"table": "loot_tables/blocks/berry_blue.json"
+				},
+				"set_block_property": {
+					"test:growth_stage": "(query.block_property('test:growth_stage')<1)?query.block_property('test:growth_stage')-1:0"
+				},
+				"run_command": {
+					"target": "self",
+					"command": [
+						"playsound block.sweet_berry_bush.pick @a[r=25] ~~~ 1.0"
+					]
+				}
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('test:growth_stage') == 0",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blueberry_bush0",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('test:growth_stage') == 1",
+				"components": {
+					"minecraft:material_instances": {
+						"*": {
+							"texture": "blueberry_bush1",
+							"render_method": "alpha_test"
+						}
+					},
+					"minecraft:pick_collision": {
+						"origin": [
+							-8,
+							0,
+							-8
+						],
+						"size": [
+							16,
+							16,
+							16
+						]
+					},
+					"minecraft:on_interact": {
+						"event": "give_berries",
+						"target": "self"
+					}
+				}
+			}
+		]
+	}
+}

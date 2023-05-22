@@ -49,3 +49,4 @@ entity.forest:snail.name=Улитка
 item.spawn_egg.entity.forest:snail.name=Создать улитку
 item.spawn_egg.entity.forest:brown_bear.name=Создать бурого медведя
 item.spawn_egg.entity.forest:racoon.name=Создать енота
+item.forest:blueberry=Черника

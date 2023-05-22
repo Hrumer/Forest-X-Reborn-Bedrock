@@ -75,6 +75,11 @@
 			"textures": [
 				"textures/items/sakura_sapling"
 			]
+		},
+		"blueberry": {
+			"textures": [
+				"textures/items/blueberry"
+			]
 		}
 	}
 }

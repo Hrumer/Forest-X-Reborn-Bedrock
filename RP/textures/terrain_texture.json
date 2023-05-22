@@ -118,6 +118,16 @@
 			"textures": [
 				"textures/blocks/peat_side"
 			]
+		},
+		"blueberry_bush0": {
+			"textures": [
+				"textures/blocks/blueberry_bush0"
+			]
+		},
+		"blueberry_bush1": {
+			"textures": [
+				"textures/blocks/blueberry_bush1"
+			]
 		}
 	}
 }

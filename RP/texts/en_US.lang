@@ -49,3 +49,4 @@ entity.forest:snail.name=Snail
 item.spawn_egg.entity.forest:snail.name=Spawn Egg Snail
 item.spawn_egg.entity.forest:brown_bear.name=Spawn Egg Brown Bear
 item.spawn_egg.entity.forest:racoon.name=Spawn Egg Racoon
+item.forest:blueberry=Blueberry
