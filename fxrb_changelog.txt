@@ -1,5 +1,7 @@
 fxrb-0.0.3-ea:
 - Add blueberries and blueberry bushes
+- Added silver crafts
+- Add silver ore generation
 - The silver block now functions as on the Java version
 - [Bugfix] More fixes bugs
 

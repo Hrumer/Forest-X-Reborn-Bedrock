@@ -20,6 +20,7 @@ projects/Forest-X-Rebon-Bedrock/BP/feature_rules/lavender_rules.json|1682264379|
 projects/Forest-X-Rebon-Bedrock/BP/feature_rules/sakura_tree_feature_rule.json|1682264379|{"featureIdentifier":["forest:sakura_tree_feature_mcstructure"],"identifier":["forest:sakura_tree_feature_rule"]}
 projects/Forest-X-Rebon-Bedrock/BP/feature_rules/wildflower_rules.json|1682264379|{"featureIdentifier":["forest:wildflower_feature"],"identifier":["forest:wildflower_rules"]}
 projects/Forest-X-Rebon-Bedrock/BP/feature_rules/bush_blueberry_rules.json|1684775335|{"featureIdentifier":["forest:bush_blueberry_feature"],"identifier":["forest:bush_blueberry_rules"]}
+projects/Forest-X-Rebon-Bedrock/BP/feature_rules/silver_ore_feature_rules.json|1684775876|{"featureIdentifier":["minecraft:silver_ore_feature"],"identifier":["minecraft:silver_ore_feature_rules"]}
 #feature
 projects/Forest-X-Rebon-Bedrock/BP/features/burning_blossom_feature.json|1682264379|{"identifier":["forest:burning_blossom_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
 projects/Forest-X-Rebon-Bedrock/BP/features/desert_flower_feature.json|1682264379|{"identifier":["forest:desert_flower_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
@@ -27,6 +28,7 @@ projects/Forest-X-Rebon-Bedrock/BP/features/lavender_feature.json|1682264379|{"i
 projects/Forest-X-Rebon-Bedrock/BP/features/sakura_tree_feature_mcstructure.json|1682264379|{"identifier":["forest:sakura_tree_feature_mcstructure"]}
 projects/Forest-X-Rebon-Bedrock/BP/features/wildflower_feature.json|1682264379|{"identifier":["forest:wildflower_feature"],"blockIdentifier":["name","states","minecraft:air","minecraft:tallgrass"]}
 projects/Forest-X-Rebon-Bedrock/BP/features/bush_blueberry_feature.json|1632223827|{"identifier":["forest:bush_blueberry_feature"],"blockIdentifier":["name","states","minecraft:air"]}
+projects/Forest-X-Rebon-Bedrock/BP/features/silver_ore_feature.json|1684775911|{"identifier":["minecraft:silver_ore_feature"]}
 #lootTable
 projects/Forest-X-Rebon-Bedrock/BP/loot_tables/banana_sapling.json|1632857474|{"lootTablePath":[]}
 projects/Forest-X-Rebon-Bedrock/BP/loot_tables/coco_block.json|1632857474|{"lootTablePath":[]}
