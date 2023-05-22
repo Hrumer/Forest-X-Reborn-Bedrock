@@ -50,3 +50,5 @@ item.spawn_egg.entity.forest:snail.name=Создать улитку
 item.spawn_egg.entity.forest:brown_bear.name=Создать бурого медведя
 item.spawn_egg.entity.forest:racoon.name=Создать енота
 item.forest:blueberry=Черника
+tile.forest:silver_ore.name=Серебряная руда
+tile.forest:deepslate_silver_ore.name=Глубинная серебряная руда

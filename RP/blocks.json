@@ -135,5 +135,13 @@
 	},
 	"forest:bush_blueberry": {
 		"sound": "sweet_berry_bush"
+	},
+	"forest:silver_ore": {
+		"textures": "silver_ore",
+		"sound": "stone"
+	},
+	"forest:deepslate_silver_ore": {
+		"textures": "deepslate_silver_ore",
+		"sound": "deepslate"
 	}
 }

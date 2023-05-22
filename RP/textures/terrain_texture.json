@@ -128,6 +128,16 @@
 			"textures": [
 				"textures/blocks/blueberry_bush1"
 			]
+		},
+		"silver_ore": {
+			"textures": [
+				"textures/blocks/silver_ore"
+			]
+		},
+		"deepslate_silver_ore": {
+			"textures": [
+				"textures/blocks/deepslate_silver_ore"
+			]
 		}
 	}
 }
