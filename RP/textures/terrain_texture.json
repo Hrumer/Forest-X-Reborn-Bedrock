@@ -188,6 +188,26 @@
 			"textures": [
 				"textures/blocks/pumice_bricks"
 			]
+		},
+		"rhyolite_bricks": {
+			"textures": [
+				"textures/blocks/rhyolite_bricks"
+			]
+		},
+		"rhyolite": {
+			"textures": [
+				"textures/blocks/rhyolite"
+			]
+		},
+		"polished_rhyolite": {
+			"textures": [
+				"textures/blocks/polished_rhyolite"
+			]
+		},
+		"chiseled_rhyolite": {
+			"textures": [
+				"textures/blocks/chiseled_rhyolite"
+			]
 		}
 	}
 }

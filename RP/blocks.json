@@ -217,5 +217,57 @@
 	"forest:truncated_pumice_wall": {
 		"textures": "truncated_pumice",
 		"sound": "basalt"
+	},
+	"forest:rhyolite": {
+		"textures": "rhyolite",
+		"sound": "stone"
+	},
+	"forest:polished_rhyolite": {
+		"textures": "polished_rhyolite",
+		"sound": "stone"
+	},
+	"forest:rhyolite_bricks": {
+		"textures": "rhyolite_bricks",
+		"sound": "stone"
+	},
+	"forest:chiseled_rhyolite": {
+		"textures": "chiseled_rhyolite",
+		"sound": "stone"
+	},
+	"forest:rhyolite_slab": {
+		"textures": "rhyolite",
+		"sound": "stone"
+	},
+	"forest:polished_rhyolite_slab": {
+		"textures": "polished_rhyolite",
+		"sound": "stone"
+	},
+	"forest:rhyolite_bricks_slab": {
+		"textures": "rhyolite_bricks",
+		"sound": "stone"
+	},
+	"forest:rhyolite_stairs": {
+		"textures": "rhyolite",
+		"sound": "stone"
+	},
+	"forest:polished_rhyolite_stairs": {
+		"textures": "polished_rhyolite",
+		"sound": "stone"
+	},
+	"forest:rhyolite_bricks_stairs": {
+		"textures": "rhyolite_bricks",
+		"sound": "stone"
+	},
+	"forest:rhyolite_wall": {
+		"textures": "rhyolite",
+		"sound": "stone"
+	},
+	"forest:polished_rhyolite_wall": {
+		"textures": "polished_rhyolite",
+		"sound": "stone"
+	},
+	"forest:rhyolite_bricks_wall": {
+		"textures": "rhyolite_bricks",
+		"sound": "stone"
 	}
 }
