@@ -77,3 +77,5 @@ tile.forest:truncated_pumice_wall.name=Стена из усеченной пем
 item.forest:berry_strudel=Ягодный штрудель
 item.forest:barbecue=Шашлык
 item.forest:raw_barbecue=Сырой шашлык
+item.forest:lard=Сало
+item.forest:bread_with_lard=Хлеб с салом

@@ -108,6 +108,16 @@
 			"textures": [
 				"textures/items/barbecue"
 			]
+		},
+		"lard": {
+			"textures": [
+				"textures/items/lard"
+			]
+		},
+		"bread_with_lard": {
+			"textures": [
+				"textures/items/bread_with_lard"
+			]
 		}
 	}
 }
