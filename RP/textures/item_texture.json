@@ -93,6 +93,11 @@
 			"textures": [
 				"textures/items/lettuce_seed"
 			]
+		},
+		"berry_strudel": {
+			"textures": [
+				"textures/items/berry_pie"
+			]
 		}
 	}
 }
