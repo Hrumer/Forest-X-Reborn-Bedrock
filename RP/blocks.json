@@ -149,5 +149,25 @@
 	},
 	"forest:lettuce_seed": {
 		"sound": "grass"
+	},
+	"forest:pumice": {
+		"textures": "pumice",
+		"sound": "basalt"
+	},
+	"forest:polished_pumice": {
+		"textures": "polished_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_bricks": {
+		"textures": "pumice_bricks",
+		"sound": "basalt"
+	},
+	"forest:truncated_pumice": {
+		"textures": "truncated_pumice",
+		"sound": "basalt"
+	},
+	"forest:truncated_carved_pumice": {
+		"textures": "truncated_carved_pumice",
+		"sound": "basalt"
 	}
 }

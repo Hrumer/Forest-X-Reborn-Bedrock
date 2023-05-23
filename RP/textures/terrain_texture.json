@@ -163,6 +163,31 @@
 			"textures": [
 				"textures/blocks/lettuce_stage3"
 			]
+		},
+		"pumice": {
+			"textures": [
+				"textures/blocks/pumice"
+			]
+		},
+		"polished_pumice": {
+			"textures": [
+				"textures/blocks/polished_pumice"
+			]
+		},
+		"truncated_pumice": {
+			"textures": [
+				"textures/blocks/truncated_pumice"
+			]
+		},
+		"truncated_carved_pumice": {
+			"textures": [
+				"textures/blocks/truncated_carved_pumice"
+			]
+		},
+		"pumice_bricks": {
+			"textures": [
+				"textures/blocks/pumice_bricks"
+			]
 		}
 	}
 }
