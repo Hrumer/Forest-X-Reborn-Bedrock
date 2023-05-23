@@ -1,0 +1,15 @@
+//bridge-file-version: #1
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "forest:barbecue"
+		},
+		"tags": [
+			"campfire",
+			"soul_campfire"
+		],
+		"input": "forest:raw_barbecue",
+		"output": "forest:barbecue"
+	}
+}

@@ -75,3 +75,5 @@ tile.forest:polished_pumice_wall.name=Стена из полированной �
 tile.forest:pumice_bricks_wall.name=Стена из пемзовых кирпичей
 tile.forest:truncated_pumice_wall.name=Стена из усеченной пемзы
 item.forest:berry_strudel=Ягодный штрудель
+item.forest:barbecue=Шашлык
+item.forest:raw_barbecue=Сырой шашлык

@@ -98,6 +98,16 @@
 			"textures": [
 				"textures/items/berry_pie"
 			]
+		},
+		"raw_barbecue": {
+			"textures": [
+				"textures/items/raw_barbecue"
+			]
+		},
+		"barbecue": {
+			"textures": [
+				"textures/items/barbecue"
+			]
 		}
 	}
 }

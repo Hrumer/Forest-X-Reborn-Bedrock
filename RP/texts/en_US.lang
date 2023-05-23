@@ -75,3 +75,5 @@ tile.forest:polished_pumice_wall.name=Polished Pumice Wall
 tile.forest:pumice_bricks_wall.name=Polished Pumice Bricks Wall
 tile.forest:truncated_pumice_wall.name=Truncated Pumice Wall
 item.forest:berry_strudel=Berry Strudel
+item.forest:barbecue=Barbecue
+item.forest:raw_barbecue=Raw Barbecue
