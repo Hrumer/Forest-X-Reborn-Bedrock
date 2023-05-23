@@ -269,5 +269,69 @@
 	"forest:rhyolite_bricks_wall": {
 		"textures": "rhyolite_bricks",
 		"sound": "stone"
+	},
+	"forest:sandslate": {
+		"textures": {
+			"up": "sandslate_top",
+			"side": "sandslate_side",
+			"down": "sandslate_top"
+		},
+		"sound": "deepslate"
+	},
+	"forest:sandslate_faceted_bricks": {
+		"textures": {
+			"up": "faceted_bricks_sandslate_top",
+			"side": "faceted_bricks_sandslate_side",
+			"down": "faceted_bricks_sandslate_top"
+		},
+		"sound": "deepslate"
+	},
+	"forest:cobbled_sandslate": {
+		"textures": "cobbled_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:polished_sandslate": {
+		"textures": "polished_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:sandslate_bricks": {
+		"textures": "sandslate_bricks",
+		"sound": "deepslate"
+	},
+	"forest:cobbled_sandslate_slab": {
+		"textures": "cobbled_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:polished_sandslate_slab": {
+		"textures": "polished_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:sandslate_bricks_slab": {
+		"textures": "sandslate_bricks",
+		"sound": "deepslate"
+	},
+	"forest:cobbled_sandslate_stairs": {
+		"textures": "cobbled_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:polished_sandslate_stairs": {
+		"textures": "polished_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:sandslate_bricks_stairs": {
+		"textures": "sandslate_bricks",
+		"sound": "deepslate"
+	},
+	"forest:cobbled_sandslate_wall": {
+		"textures": "cobbled_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:polished_sandslate_wall": {
+		"textures": "polished_sandslate",
+		"sound": "deepslate"
+	},
+	"forest:sandslate_bricks_wall": {
+		"textures": "sandslate_bricks",
+		"sound": "deepslate"
 	}
 }

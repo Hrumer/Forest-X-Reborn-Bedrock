@@ -3,6 +3,7 @@ fxrb-0.0.4-ea:
 - Added more food
 - Added pumice blocks
 - Added rhyolite blocks
+- Add sandslate blocks
 - Added crushed sandstone walls
 - Improve states for some blocks
 - [Bugfix] More fixes bugs

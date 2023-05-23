@@ -208,6 +208,41 @@
 			"textures": [
 				"textures/blocks/chiseled_rhyolite"
 			]
+		},
+		"faceted_bricks_sandslate_side": {
+			"textures": [
+				"textures/blocks/faceted_bricks_sandslate_side"
+			]
+		},
+		"faceted_bricks_sandslate_top": {
+			"textures": [
+				"textures/blocks/faceted_bricks_sandslate_top"
+			]
+		},
+		"sandslate_top": {
+			"textures": [
+				"textures/blocks/sandslate_top"
+			]
+		},
+		"sandslate_side": {
+			"textures": [
+				"textures/blocks/sandslate_side"
+			]
+		},
+		"cobbled_sandslate": {
+			"textures": [
+				"textures/blocks/cobbled_sandslate"
+			]
+		},
+		"polished_sandslate": {
+			"textures": [
+				"textures/blocks/polished_sandslate"
+			]
+		},
+		"sandslate_bricks": {
+			"textures": [
+				"textures/blocks/sandslate_bricks"
+			]
 		}
 	}
 }

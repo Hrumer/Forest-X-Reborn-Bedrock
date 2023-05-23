@@ -1,0 +1,26 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:sandslate"
+		},
+		"components": {
+			"minecraft:destroy_time": 2,
+			"minecraft:map_color": "#626669",
+			"minecraft:friction": 0.5,
+			"minecraft:loot": "loot_tables/blocks/cobbled_sandslate.json",
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.sandslate",
+				"category": "Nature"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "sandslate",
+					"render_method": "opaque"
+				}
+			},
+			"tag:stone": {}
+		},
+		"events": {}
+	}
+}
