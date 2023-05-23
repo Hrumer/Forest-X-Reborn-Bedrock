@@ -118,6 +118,11 @@
 			"textures": [
 				"textures/items/bread_with_lard"
 			]
+		},
+		"meat_loaf": {
+			"textures": [
+				"textures/items/meat_loaf"
+			]
 		}
 	}
 }

@@ -1,0 +1,28 @@
+{
+    "format_version": "1.16",
+    "minecraft:recipe_shaped": {
+        "description": {
+            "identifier": "forest:meat_loaf"
+        },
+        "tags": [
+            "crafting_table"
+        ],
+        "pattern": [
+            " A ",
+            " B ",
+            " A "
+        ],
+        "key": {
+            "A": {
+                "item": "forest:lettuce"
+            },
+            "B": {
+                "item": "minecraft:cooked_beef"
+            }
+        },
+        "result": {
+            "item": "forest:meat_loaf",
+            "count": 1
+        }
+    }
+}
