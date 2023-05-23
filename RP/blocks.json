@@ -169,5 +169,53 @@
 	"forest:truncated_carved_pumice": {
 		"textures": "truncated_carved_pumice",
 		"sound": "basalt"
+	},
+	"forest:pumice_slab": {
+		"textures": "pumice",
+		"sound": "basalt"
+	},
+	"forest:polished_pumice_slab": {
+		"textures": "polished_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_bricks_slab": {
+		"textures": "pumice_bricks",
+		"sound": "basalt"
+	},
+	"forest:truncated_pumice_slab": {
+		"textures": "truncated_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_stairs": {
+		"textures": "pumice",
+		"sound": "basalt"
+	},
+	"forest:polished_pumice_stairs": {
+		"textures": "polished_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_bricks_stairs": {
+		"textures": "pumice_bricks",
+		"sound": "basalt"
+	},
+	"forest:truncated_pumice_stairs": {
+		"textures": "truncated_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_wall": {
+		"textures": "pumice",
+		"sound": "basalt"
+	},
+	"forest:polished_pumice_wall": {
+		"textures": "polished_pumice",
+		"sound": "basalt"
+	},
+	"forest:pumice_bricks_wall": {
+		"textures": "pumice_bricks",
+		"sound": "basalt"
+	},
+	"forest:truncated_pumice_wall": {
+		"textures": "truncated_pumice",
+		"sound": "basalt"
 	}
 }

@@ -2,7 +2,7 @@
 	"format_version": "1.16.100",
 	"minecraft:block": {
 		"description": {
-			"identifier": "forest:pumice_slab",
+			"identifier": "forest:pumice_bricks_slab",
 			"properties": {
 				"forest:slab": [
 					0,
@@ -33,7 +33,7 @@
 					"minecraft:on_interact": {
 						"event": "forest:block",
 						"target": "self",
-						"condition": "query.get_equipped_item_name('main_hand')=='pumice_slab'&&query.block_face==1"
+						"condition": "query.get_equipped_item_name('main_hand')=='pumice_bricks_slab'&&query.block_face==1"
 					},
 					"minecraft:entity_collision": {
 						"origin": [
@@ -61,7 +61,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pumice",
+							"texture": "pumice_bricks",
 							"render_method": "alpha_test"
 						}
 					}
@@ -75,7 +75,7 @@
 					"minecraft:on_interact": {
 						"event": "forest:block",
 						"target": "self",
-						"condition": "query.get_equipped_item_name('main_hand')=='pumice_slab'&&query.block_face==0"
+						"condition": "query.get_equipped_item_name('main_hand')=='pumice_bricks_slab'&&query.block_face==0"
 					},
 					"minecraft:entity_collision": {
 						"origin": [
@@ -103,7 +103,7 @@
 					},
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pumice",
+							"texture": "pumice_bricks",
 							"render_method": "alpha_test"
 						}
 					}
@@ -113,11 +113,11 @@
 				"condition": "query.block_property('forest:slab') == 2",
 				"components": {
 					"minecraft:unit_cube": {},
-					"minecraft:loot": "loot_tables/blocks/pumice_slab_double.json",
+					"minecraft:loot": "loot_tables/blocks/pumice_bricks_bricks_slab_double.json",
 					"minecraft:block_light_absorption": 15,
 					"minecraft:material_instances": {
 						"*": {
-							"texture": "pumice",
+							"texture": "pumice_bricks",
 							"render_method": "opaque"
 						}
 					}
