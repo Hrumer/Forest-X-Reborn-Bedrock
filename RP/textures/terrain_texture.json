@@ -143,6 +143,26 @@
 			"textures": [
 				"textures/blocks/blue_rose"
 			]
+		},
+		"lettuce_stage0": {
+			"textures": [
+				"textures/blocks/lettuce_stage0"
+			]
+		},
+		"lettuce_stage1": {
+			"textures": [
+				"textures/blocks/lettuce_stage1"
+			]
+		},
+		"lettuce_stage2": {
+			"textures": [
+				"textures/blocks/lettuce_stage2"
+			]
+		},
+		"lettuce_stage3": {
+			"textures": [
+				"textures/blocks/lettuce_stage3"
+			]
 		}
 	}
 }

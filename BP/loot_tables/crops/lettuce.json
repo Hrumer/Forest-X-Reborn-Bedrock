@@ -6,7 +6,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "forest:rice_straw",
+          "name": "forest:lettuce",
           "functions": [
             {
               "function": "set_count",
@@ -20,7 +20,7 @@
         {
           "type": "item",
           "weight": 1,
-          "name": "forest:rice_seed_item",
+          "name": "forest:lettuce_seed_item",
           "functions": [
             {
               "function": "set_count",

@@ -146,5 +146,8 @@
 	"forest:deepslate_silver_ore": {
 		"textures": "deepslate_silver_ore",
 		"sound": "deepslate"
+	},
+	"forest:lettuce_seed": {
+		"sound": "grass"
 	}
 }

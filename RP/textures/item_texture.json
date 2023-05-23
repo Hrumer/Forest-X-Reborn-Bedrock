@@ -83,6 +83,16 @@
 			"textures": [
 				"textures/items/blueberry"
 			]
+		},
+		"lettuce": {
+			"textures": [
+				"textures/items/lettuce"
+			]
+		},
+		"lettuce_seed": {
+			"textures": [
+				"textures/items/lettuce_seed"
+			]
 		}
 	}
 }

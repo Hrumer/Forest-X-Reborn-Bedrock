@@ -55,3 +55,5 @@ item.forest:blueberry=Черника
 tile.forest:silver_ore.name=Серебряная руда
 tile.forest:deepslate_silver_ore.name=Глубинная серебряная руда
 item.forest:blue_rose=Синяя роза
+item.forest:lettuce_seed_item=Семена салата
+item.forest:lettuce=Салат

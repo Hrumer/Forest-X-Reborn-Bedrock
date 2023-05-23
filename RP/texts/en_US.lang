@@ -55,3 +55,5 @@ item.forest:blueberry=Blueberry
 tile.forest:silver_ore.name=Silver Ore
 tile.forest:deepslate_silver_ore.name=Deepslate Silver Ore
 item.forest:blue_rose=Blue Rose
+item.forest:lettuce_seed_item=Lettuce Seed
+item.forest:lettuce=Lettuce
