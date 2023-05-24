@@ -123,6 +123,86 @@
 			"textures": [
 				"textures/items/meat_loaf"
 			]
+		},
+		"gingerbread_form_brick": {
+			"textures": [
+				"textures/items/gingerbread_form_brick"
+			]
+		},
+		"gingerbread_form_man": {
+			"textures": [
+				"textures/items/gingerbread_form_man"
+			]
+		},
+		"gingerbread_form_pine": {
+			"textures": [
+				"textures/items/gingerbread_form_pine"
+			]
+		},
+		"gingerbread_form_heart": {
+			"textures": [
+				"textures/items/gingerbread_form_heart"
+			]
+		},
+		"gingerbread_dough": {
+			"textures": [
+				"textures/items/gingerbread_dough"
+			]
+		},
+		"raw_gingerbread_heart": {
+			"textures": [
+				"textures/items/raw_gingerbread_heart"
+			]
+		},
+		"raw_gingerbread_man": {
+			"textures": [
+				"textures/items/raw_gingerbread_man"
+			]
+		},
+		"raw_gingerbread_brick": {
+			"textures": [
+				"textures/items/raw_gingerbread_brick"
+			]
+		},
+		"raw_gingerbread_pine": {
+			"textures": [
+				"textures/items/raw_gingerbread_pine"
+			]
+		},
+		"gingerbread_pine": {
+			"textures": [
+				"textures/items/gingerbread_pine"
+			]
+		},
+		"gingerbread_heart": {
+			"textures": [
+				"textures/items/gingerbread_heart"
+			]
+		},
+		"gingerbread_brick": {
+			"textures": [
+				"textures/items/gingerbread_brick"
+			]
+		},
+		"gingerbread_round": {
+			"textures": [
+				"textures/items/gingerbread_round"
+			]
+		},
+		"gingerbread_man": {
+			"textures": [
+				"textures/items/gingerbread_man"
+			]
+		},
+		"glazed_gingerbread_man": {
+			"textures": [
+				"textures/items/glazed_gingerbread_man"
+			]
+		},
+		"glazed_gingerbread_pine": {
+			"textures": [
+				"textures/items/glazed_gingerbread_pine"
+			]
 		}
 	}
 }

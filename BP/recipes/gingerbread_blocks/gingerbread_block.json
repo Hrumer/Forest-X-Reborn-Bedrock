@@ -1,0 +1,14 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:recipe_furnace": {
+		"description": {
+			"identifier": "forest:gingerbread_block"
+		},
+		"tags": [
+			"furnace",
+			"smoker"
+		],
+		"input": "forest:raw_gingerbread_block",
+		"output": "forest:gingerbread_block"
+	}
+}

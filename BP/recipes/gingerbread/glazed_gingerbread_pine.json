@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:glazed_gingerbread_pine"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AB"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:milk_bucket"
+			},
+			"B": {
+				"item": "forest:gingerbread_pine"
+			}
+		},
+		"result": [
+			{
+				"item": "forest:glazed_gingerbread_pine",
+				"count": 1
+			},
+			{
+				"item": "minecraft:bucket",
+				"count": 1
+			}
+		]
+	}
+}

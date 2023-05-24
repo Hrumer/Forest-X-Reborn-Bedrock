@@ -258,6 +258,21 @@
 			"textures": [
 				"textures/blocks/marble_bricks"
 			]
+		},
+		"gingerbread_dough_block": {
+			"textures": [
+				"textures/blocks/gingerbread_dough_block"
+			]
+		},
+		"gingerbread_block": {
+			"textures": [
+				"textures/blocks/gingerbread_block"
+			]
+		},
+		"glazed_gingerbread_bricks": {
+			"textures": [
+				"textures/blocks/glazed_gingerbread_bricks"
+			]
 		}
 	}
 }

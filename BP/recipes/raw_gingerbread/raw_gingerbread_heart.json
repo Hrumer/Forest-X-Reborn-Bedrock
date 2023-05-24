@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:raw_gingerbread_heart"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AB"
+		],
+		"key": {
+			"A": {
+				"item": "forest:gingerbread_dough"
+			},
+			"B": {
+				"item": "forest:gingerbread_form_heart"
+			}
+		},
+		"result": [
+			{
+				"item": "forest:raw_gingerbread_heart",
+				"count": 1
+			},
+			{
+				"item": "forest:gingerbread_form_heart",
+				"count": 1
+			}
+		]
+	}
+}

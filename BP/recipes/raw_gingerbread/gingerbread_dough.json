@@ -1,0 +1,35 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:gingerbread_dough"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"ABC"
+		],
+		"key": {
+			"A": {
+				"item": "minecraft:wheat"
+			},
+			"B": {
+				"item": "minecraft:egg"
+			},
+			"C": {
+				"item": "minecraft:honey_bottle"
+			}
+		},
+		"result": [
+			{
+				"item": "forest:gingerbread_dough",
+				"count": 1
+			},
+			{
+				"item": "minecraft:glass_bottle",
+				"count": 1
+			}
+		]
+	}
+}

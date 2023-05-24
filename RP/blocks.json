@@ -381,5 +381,17 @@
 	"forest:marble_bricks_wall": {
 		"textures": "marble_bricks",
 		"sound": "tuff"
+	},
+	"forest:raw_gingerbread_block": {
+		"textures": "gingerbread_dough_block",
+		"sound": "slime"
+	},
+	"forest:gingerbread_block": {
+		"textures": "gingerbread_block",
+		"sound": "cloth"
+	},
+	"forest:gingerbread_bricks": {
+		"textures": "glazed_gingerbread_bricks",
+		"sound": "cloth"
 	}
 }

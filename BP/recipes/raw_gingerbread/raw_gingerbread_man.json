@@ -1,0 +1,32 @@
+{
+	"format_version": "1.13.0",
+	"minecraft:recipe_shaped": {
+		"description": {
+			"identifier": "forest:raw_gingerbread_man"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"pattern": [
+			"AB"
+		],
+		"key": {
+			"A": {
+				"item": "forest:gingerbread_dough"
+			},
+			"B": {
+				"item": "forest:gingerbread_form_man"
+			}
+		},
+		"result": [
+			{
+				"item": "forest:raw_gingerbread_man",
+				"count": 1
+			},
+			{
+				"item": "forest:gingerbread_form_man",
+				"count": 1
+			}
+		]
+	}
+}
