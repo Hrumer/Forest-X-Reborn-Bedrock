@@ -203,6 +203,16 @@
 			"textures": [
 				"textures/items/glazed_gingerbread_pine"
 			]
+		},
+		"moonshroom": {
+			"textures": [
+				"textures/items/moonshroom"
+			]
+		},
+		"sunshroom": {
+			"textures": [
+				"textures/items/sunshroom"
+			]
 		}
 	}
 }

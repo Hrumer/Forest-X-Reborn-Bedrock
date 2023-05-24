@@ -128,3 +128,5 @@ item.forest:glazed_gingerbread=Глазированный пряник
 tile.forest:gingerbread_block.name=Пряничный блок
 tile.forest:raw_gingerbread_block.name=Сырой пряничный блок
 tile.forest:gingerbread_bricks.name=Пряничные кирпичи
+item.forest:moonshroom_item=Луногриб
+item.forest:sunshroom_item=Солнцегриб

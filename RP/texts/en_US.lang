@@ -128,3 +128,5 @@ item.forest:glazed_gingerbread=Glazed Gingerbread
 tile.forest:gingerbread_block.name=Gingerbread Block
 tile.forest:raw_gingerbread_block.name=Raw Gingerbread Block
 tile.forest:gingerbread_bricks.name=Gingerbread Bricks
+item.forest:moonshroom_item=Moonshroom
+item.forest:sunshroom_item=Sunshroom

@@ -273,6 +273,16 @@
 			"textures": [
 				"textures/blocks/glazed_gingerbread_bricks"
 			]
+		},
+		"sunshroom": {
+			"textures": [
+				"textures/blocks/sunshroom"
+			]
+		},
+		"moonshroom": {
+			"textures": [
+				"textures/blocks/moonshroom"
+			]
 		}
 	}
 }

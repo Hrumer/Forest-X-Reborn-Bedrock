@@ -393,5 +393,13 @@
 	"forest:gingerbread_bricks": {
 		"textures": "glazed_gingerbread_bricks",
 		"sound": "cloth"
+	},
+	"forest:moonshroom": {
+		"textures": "moonshroom",
+		"sound": "fungus"
+	},
+	"forest:sunshroom": {
+		"textures": "sunshroom",
+		"sound": "fungus"
 	}
 }
