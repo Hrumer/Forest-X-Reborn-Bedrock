@@ -1,0 +1,1123 @@
+{
+	"format_version": "1.19.80",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:marble_bricks_stairs",
+			"menu_category": {
+				"category": "construction",
+				"group": "itemGroup.name.stairs"
+			},
+			"properties": {
+				"stair:rotation": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5
+				],
+				"stair:shape": [
+					0,
+					1,
+					2,
+					3,
+					4,
+					5,
+					6,
+					7,
+					8,
+					9,
+					10,
+					11,
+					12,
+					15,
+					16,
+					17
+				],
+				"better:is_upside_down": [
+					false,
+					true
+				]
+			}
+		},
+		"components": {
+			"minecraft:map_color": "#dda867",
+			"minecraft:destructible_by_mining": {
+				"seconds_to_destroy": 1.35 //Important
+			},
+			"minecraft:friction": 0.6,
+			"minecraft:destructible_by_explosion": {
+				"explosion_resistance": 1.0 //Important
+			},
+			"minecraft:light_dampening": 0,
+			"tag:stone": {},
+			"tag:stairs": {},
+			"minecraft:geometry": {
+				"identifier": "geometry.stairs",
+				"bone_visibility": {
+					"top0": false,
+					"top1": false,
+					"top2": false,
+					"top3": false,
+					"bottom": false,
+					"top0u": false,
+					"top1u": false,
+					"top2u": false,
+					"top3u": false,
+					"bottomu": false
+				}
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "marble_bricks",
+					"render_method": "opaque",
+					"ambient_occlusion": true
+				}
+			},
+			"minecraft:queued_ticking": {
+				"looping": true,
+				"interval_range": [
+					0,
+					0
+				],
+				"on_tick": {
+					"event": "check_part_visibility",
+					"target": "self"
+				}
+			},
+			"minecraft:on_player_placing": {
+				"event": "update_rotation"
+			},
+			"minecraft:collision_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					8,
+					16
+				]
+			},
+			"minecraft:selection_box": {
+				"origin": [
+					-8,
+					0,
+					-8
+				],
+				"size": [
+					16,
+					16,
+					16
+				]
+			}
+		},
+		"permutations": [
+			{
+				"condition": "query.block_property('stair:rotation') == 2",
+				"components": {
+					"tag:r1": {}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:rotation') == 3",
+				"components": {
+					"tag:r2": {}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:rotation') == 4",
+				"components": {
+					"tag:r3": {}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:rotation') == 5",
+				"components": {
+					"tag:r4": {}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 0 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": true,
+							"top2": false,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 1 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": true,
+							"top2": false,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 2 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": true,
+							"top2": true,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 3 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 4 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": true,
+							"top2": false,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 5 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": false,
+							"top2": true,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 6 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": true,
+							"top2": true,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 7 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": false,
+							"top2": true,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 8 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": false,
+							"top2": true,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 9 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 10 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": false,
+							"top2": false,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 11 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": false,
+							"top2": true,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 12 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": true,
+							"top2": false,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 13 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 14 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 15 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": true,
+							"top2": true,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 16 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": true,
+							"top2": true,
+							"top3": true,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 17 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": true,
+							"top1": true,
+							"top2": true,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 18 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": true,
+							"top2": false,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 19 && query.block_property('better:is_upside_down') == false",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0": false,
+							"top1": false,
+							"top2": true,
+							"top3": false,
+							"bottom": true,
+							"rotated": false,
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 0 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": true,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 1 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": true,
+							"top2u": false,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 2 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": true,
+							"top2u": true,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 3 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 4 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": true,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 5 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": false,
+							"top2u": true,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 6 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": true,
+							"top2u": true,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 7 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": false,
+							"top2u": true,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 8 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": false,
+							"top2u": true,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 9 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 10 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": false,
+							"top2u": false,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 11 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": false,
+							"top2u": true,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 12 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": true,
+							"top2u": false,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 13 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": false,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 14 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": false,
+							"top2u": false,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 15 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": true,
+							"top2u": true,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 16 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": true,
+							"top2u": true,
+							"top3u": true,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 17 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": true,
+							"top1u": true,
+							"top2u": true,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 18 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": true,
+							"top2u": false,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			},
+			{
+				"condition": "query.block_property('stair:shape') == 19 && query.block_property('better:is_upside_down') == true",
+				"components": {
+					"minecraft:geometry": {
+						"identifier": "geometry.stairs",
+						"bone_visibility": {
+							"top0u": false,
+							"top1u": false,
+							"top2u": true,
+							"top3u": false,
+							"bottomu": true,
+							"normal": false,
+							"top0": false,
+							"top1": false,
+							"top2": false,
+							"top3": false,
+							"bottom": false
+						}
+					}
+				}
+			}
+		],
+		"events": {
+			"update_rotation": {
+				"sequence": [
+					{
+						"set_block_property": {
+							"stair:rotation": "query.cardinal_facing_2d"
+						}
+					},
+					{
+						"set_block_property": {
+							"better:is_upside_down": "(query.target_x_rotation < 0 || query.cardinal_facing == 1 || query.cardinal_block_face_placed_on == 0) ? true : false"
+						}
+					}
+				]
+			},
+			"check_part_visibility": {
+				"sequence": [
+					{
+						"condition": "(query.block_property('stair:rotation') == 2 && !(q.block_neighbor_has_any_tag(0,0,-1,'r3')) && !(q.block_neighbor_has_any_tag(0,0,-1,'r4')) && !(q.block_neighbor_has_any_tag(0,0,1,'r3')) && !(q.block_neighbor_has_any_tag(0,0,1,'r4')))",
+						"set_block_property": {
+							"stair:shape": 0
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 2 && q.block_neighbor_has_any_tag(0,0,1,'r3'))",
+						"set_block_property": {
+							"stair:shape": 1
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 2 && q.block_neighbor_has_any_tag(0,0,1,'r4'))",
+						"set_block_property": {
+							"stair:shape": 2
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 2 && q.block_neighbor_has_any_tag(0,0,-1,'r3'))",
+						"set_block_property": {
+							"stair:shape": 3
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 2 && q.block_neighbor_has_any_tag(0,0,-1,'r4'))",
+						"set_block_property": {
+							"stair:shape": 4
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 3 && !(q.block_neighbor_has_any_tag(0,0,-1,'r3')) && !(q.block_neighbor_has_any_tag(0,0,-1,'r4')) && !(q.block_neighbor_has_any_tag(0,0,1,'r3')) && !(q.block_neighbor_has_any_tag(0,0,1,'r4')))",
+						"set_block_property": {
+							"stair:shape": 5
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 3 && q.block_neighbor_has_any_tag(0,0,-1,'r4'))",
+						"set_block_property": {
+							"stair:shape": 6
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 3 && q.block_neighbor_has_any_tag(0,0,-1,'r3'))",
+						"set_block_property": {
+							"stair:shape": 7
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 3 && q.block_neighbor_has_any_tag(0,0,1,'r4'))",
+						"set_block_property": {
+							"stair:shape": 8
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 3 && q.block_neighbor_has_any_tag(0,0,1,'r3'))",
+						"set_block_property": {
+							"stair:shape": 9
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 4 && !(q.block_neighbor_has_any_tag(-1,0,0,'r1')) && !(q.block_neighbor_has_any_tag(-1,0,0,'r1')) && !(q.block_neighbor_has_any_tag(1,0,0,'r2')) && !(q.block_neighbor_has_any_tag(1,0,0,'r2')))",
+						"set_block_property": {
+							"stair:shape": 10
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 4 && q.block_neighbor_has_any_tag(1,0,0,'r2'))",
+						"set_block_property": {
+							"stair:shape": 11
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 4 && q.block_neighbor_has_any_tag(1,0,0,'r1'))",
+						"set_block_property": {
+							"stair:shape": 12
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 4 && q.block_neighbor_has_any_tag(-1,0,0,'r1'))",
+						"set_block_property": {
+							"stair:shape": 3 //since 3 is identical to 13
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 4 && q.block_neighbor_has_any_tag(-1,0,0,'r2'))",
+						"set_block_property": {
+							"stair:shape": 9 //since 9 is identical to 14
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 5 && !(q.block_neighbor_has_any_tag(-1,0,0,'r1')) && !(q.block_neighbor_has_any_tag(-1,0,0,'r1')) && !(q.block_neighbor_has_any_tag(1,0,0,'r2')) && !(q.block_neighbor_has_any_tag(1,0,0,'r2')))",
+						"set_block_property": {
+							"stair:shape": 15
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 5 && q.block_neighbor_has_any_tag(-1,0,0,'r2'))",
+						"set_block_property": {
+							"stair:shape": 16
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 5 && q.block_neighbor_has_any_tag(-1,0,0,'r1'))",
+						"set_block_property": {
+							"stair:shape": 17
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 5 && q.block_neighbor_has_any_tag(1,0,0,'r1'))",
+						"set_block_property": {
+							"stair:shape": 4 //since 4 is identical to 18
+						}
+					},
+					{
+						"condition": "(query.block_property('stair:rotation') == 5 && q.block_neighbor_has_any_tag(1,0,0,'r2'))",
+						"set_block_property": {
+							"stair:shape": 8 //since 8 is identical to 19
+						}
+					}
+				]
+			}
+		}
+	}
+}

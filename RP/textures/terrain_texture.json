@@ -243,6 +243,21 @@
 			"textures": [
 				"textures/blocks/sandslate_bricks"
 			]
+		},
+		"marble": {
+			"textures": [
+				"textures/blocks/marble"
+			]
+		},
+		"polished_marble": {
+			"textures": [
+				"textures/blocks/marble_polished"
+			]
+		},
+		"marble_bricks": {
+			"textures": [
+				"textures/blocks/marble_bricks"
+			]
 		}
 	}
 }

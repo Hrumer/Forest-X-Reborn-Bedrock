@@ -1,0 +1,25 @@
+{
+	"format_version": "1.16.100",
+	"minecraft:block": {
+		"description": {
+			"identifier": "forest:marble_bricks"
+		},
+		"components": {
+			"minecraft:destroy_time": 1.35,
+			"minecraft:map_color": "#626669",
+			"minecraft:friction": 0.5,
+			"minecraft:creative_category": {
+				"group": "itemGroup.name.marble",
+				"category": "Nature"
+			},
+			"minecraft:material_instances": {
+				"*": {
+					"texture": "marble_bricks",
+					"render_method": "opaque"
+				}
+			},
+			"tag:stone": {}
+		},
+		"events": {}
+	}
+}

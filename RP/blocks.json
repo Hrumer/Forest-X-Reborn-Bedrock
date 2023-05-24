@@ -333,5 +333,53 @@
 	"forest:sandslate_bricks_wall": {
 		"textures": "sandslate_bricks",
 		"sound": "deepslate"
+	},
+	"forest:marble": {
+		"textures": "marble",
+		"sound": "tuff"
+	},
+	"forest:polished_marble": {
+		"textures": "polished_marble",
+		"sound": "tuff"
+	},
+	"forest:marble_bricks": {
+		"textures": "marble_bricks",
+		"sound": "tuff"
+	},
+	"forest:marble_slab": {
+		"textures": "marble",
+		"sound": "tuff"
+	},
+	"forest:polished_marble_slab": {
+		"textures": "polished_marble",
+		"sound": "tuff"
+	},
+	"forest:marble_bricks_slab": {
+		"textures": "marble_bricks",
+		"sound": "tuff"
+	},
+	"forest:marble_stairs": {
+		"textures": "marble",
+		"sound": "tuff"
+	},
+	"forest:polished_marble_stairs": {
+		"textures": "polished_marble",
+		"sound": "tuff"
+	},
+	"forest:marble_bricks_stairs": {
+		"textures": "marble_bricks",
+		"sound": "tuff"
+	},
+	"forest:marble_wall": {
+		"textures": "marble",
+		"sound": "tuff"
+	},
+	"forest:polished_marble_wall": {
+		"textures": "polished_marble",
+		"sound": "tuff"
+	},
+	"forest:marble_bricks_wall": {
+		"textures": "marble_bricks",
+		"sound": "tuff"
 	}
 }
