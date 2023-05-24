@@ -11,7 +11,7 @@
 			"minecraft:loot": "loot_tables/blocks/cobbled_sandslate.json",
 			"minecraft:creative_category": {
 				"group": "itemGroup.name.sandslate",
-				"category": "Nature"
+				"category": "Construction"
 			},
 			"minecraft:material_instances": {
 				"*": {

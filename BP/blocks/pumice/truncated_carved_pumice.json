@@ -10,7 +10,7 @@
 			"minecraft:friction": 0.5,
 			"minecraft:creative_category": {
 				"group": "itemGroup.name.basalt",
-				"category": "Nature"
+				"category": "Construction"
 			},
 			"minecraft:material_instances": {
 				"*": {
