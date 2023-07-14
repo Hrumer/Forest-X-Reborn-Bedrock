@@ -212,7 +212,6 @@ projects/Forest-X-Rebon-Bedrock/BP/items/gingerbread_forms/gingerbread_form_bric
 projects/Forest-X-Rebon-Bedrock/BP/items/sapling/sakura_sapling.json|1682264379|{"identifier":["forest:sakura_sapling_item"],"itemTexture":["sakura_sapling"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/flower/lavender.json|1682264379|{"identifier":["forest:lavender_item"],"itemTexture":["lavender"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/raw_metals/raw_silver.json|1682264379|{"identifier":["forest:raw_silver"],"event":[],"itemTexture":["raw_silver"],"tag":[]}
-projects/Forest-X-Rebon-Bedrock/BP/items/music_discs/record_egypt.json|1682264379|{"identifier":["forest:record_egypt"],"event":[],"itemTexture":["music_disc_egypt"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/flower/blue_rose.json|1684777176|{"identifier":["forest:blue_rose_item"],"itemTexture":["blue_rose"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/mushrooms/sunshroom.json|1684944897|{"identifier":["forest:sunshroom_item"],"event":[],"itemTexture":["sunshroom"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/flower/desert_flower.json|1682264379|{"identifier":["forest:desert_flower_item"],"event":[],"itemTexture":["desert_flower"],"tag":[]}
@@ -236,7 +235,7 @@ projects/Forest-X-Rebon-Bedrock/BP/items/silver/silver_shovel.json|1684774126|{"
 projects/Forest-X-Rebon-Bedrock/BP/items/food/raw_barbecue.json|1684855112|{"identifier":["forest:raw_barbecue"],"itemTexture":["raw_barbecue"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/food/meat_loaf.json|1684855797|{"identifier":["forest:meat_loaf"],"itemTexture":["meat_loaf"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/raw_gingerbread/raw_gingerbread_heart.json|1684922595|{"identifier":["forest:raw_gingerbread_heart"],"event":[],"itemTexture":["raw_gingerbread_heart"],"tag":[]}
-projects/Forest-X-Rebon-Bedrock/BP/items/silver/silver_sword.json|1689375243|{"identifier":["forest:silver_sword"],"event":["dmg"],"eventReference":["dmg"],"itemTexture":["silver_sword"],"tag":[]}
+projects/Forest-X-Rebon-Bedrock/BP/items/silver/silver_sword.json|1689375245561|{"identifier":["forest:silver_sword"],"event":["dmg"],"eventReference":["dmg"],"itemTexture":["silver_sword"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/silver/silver_nugget.json|1682264379|{"identifier":["forest:silver_nugget"],"event":[],"itemTexture":["silver_nugget"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/harvest/lettuce_seed.json|1684836208|{"identifier":["forest:lettuce_seed_item"],"itemTexture":["lettuce_seed"],"tag":[]}
 projects/Forest-X-Rebon-Bedrock/BP/items/gingerbread/gingerbread_man.json|1684926108|{"identifier":["forest:gingerbread_man"],"event":[],"itemTexture":["gingerbread_man"],"tag":[]}
