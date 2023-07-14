@@ -1,8 +1,8 @@
 {
-	"format_version": "1.13.0",
+	"format_version": "1.20.10",
 	"minecraft:biome": {
 		"description": {
-			"identifier": "peat_bog"
+			"identifier": "forest:peat_bog"
 		},
 		"components": {
 			"minecraft:climate": {
@@ -25,7 +25,7 @@
 				"sea_material": "minecraft:water"
 			},
 			"minecraft:overworld_generation_rules": {
-				"mutate_transformation": "swampland_mutated",
+				"mutate_transformation": "swampland",
 				"generate_for_climates": [
 					[
 						"medium",

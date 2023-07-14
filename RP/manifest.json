@@ -5,8 +5,8 @@
 		"description": "The revival of the legendary Forest X Second Edition addon.",
 		"min_engine_version": [
 			1,
-			19,
-			80
+			20,
+			10
 		],
 		"uuid": "aa123684-0902-45d2-a8dc-b00a20e97213",
 		"version": [
