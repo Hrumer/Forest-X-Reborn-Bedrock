@@ -18,7 +18,7 @@
 			"minecraft:mining_speed": 8,
 			"minecraft:damage": 3,
 			"minecraft:enchantable": {
-				"value": 11,
+				"value": 40,
 				"slot": "pickaxe"
 			},
 			"minecraft:icon": {

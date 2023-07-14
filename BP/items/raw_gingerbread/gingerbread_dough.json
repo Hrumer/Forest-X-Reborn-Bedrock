@@ -14,7 +14,12 @@
 			},
 			"minecraft:allow_off_hand": false,
 			"minecraft:max_stack_size": 64,
-			"minecraft:hand_equipped": false
+			"minecraft:hand_equipped": false,
+			"minecraft:food": {
+				"can_always_eat": false,
+				"nutrition": 1,
+				"saturation_modifier": "poor"
+			}
 		},
 		"events": {}
 	}

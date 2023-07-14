@@ -2,6 +2,48 @@ fxrb-0.0.4-ea:
 - 
 - [Bugfix] More fixes bugs
 
-1.1.1-release:
-- Add moonshroom and sunshroom
+1.3.0-release:
+- 
 - [Bugfix] 
+
+
+
+Portlist:
+
+1.3.0 Port: 
+Snapshot 1.3.0.2307**:
+ - Added fermentation barrel
+ - Added ash cover
+ - Added two new achievements
+ - [Bugfix] Fixed food characteristics
+ - [Bugfix] Fixed the time of destruction of the ash block
+Snapshot 1.3.0.230707:
+ - Added a hint about the amount of arrows in the quiver
+ - Added translations for gingerbread tips
+ - The volcanic biome has been recycled again
+ - Improved the patch of grass block in the semi-desert
+ - Updated panorama again
+ - [Bugfix] 
+Snapshot 1.3.0.230705:
+ - Added silver armor
+ + Silver tools and armor now have an enchantability of 40
+ = Silver tools are no longer enchanted when crafting
+ - Added grapes and grape vine
+ - Added a quiver
+ - Added ash block
+ - Completely redesigned volcano biome
+ - Made some improvements with inventory tabs
+ + Updated Panorama
+
+1.2.0 Port:
+- Added painted planks, fences, fence gates, slabs and stairs
+? Added mechanics of painting planks with dyes without using a workbench
++ Added cherry parquet
+= Added new achievement
+= Added a separate tab for tools from the mod
+= Removed the tab with forms for gingerbread
+- Raw gingerbread dough can now be eaten
++ The sakura tree was removed due to the addition of a vanilla cherry variant
++ When crafting parquet, 5 blocks are now obtained
++ The damage of a silver sword is equal to an iron sword
++ [Bugfix] Fixed the effectiveness of the silver pickaxe

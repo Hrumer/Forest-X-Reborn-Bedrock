@@ -17,6 +17,11 @@
 			"minecraft:hand_equipped": false,
 			"minecraft:display_name": {
 				"value": "item.forest:raw_gingerbread"
+			},
+			"minecraft:food": {
+				"can_always_eat": false,
+				"nutrition": 1,
+				"saturation_modifier": "poor"
 			}
 		},
 		"events": {}
