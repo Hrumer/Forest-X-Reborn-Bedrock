@@ -1,4 +1,4 @@
-{
+	{
   "format_version": "1.12",
   "minecraft:recipe_shaped": {
     "description": {
@@ -14,12 +14,12 @@
     ],
     "key": {
       "X": {
-        "item": "forest:sakura_planks"
+        "item": "minecraft:cherry_planks"
       }
     },
     "result": {
       "item": "forest:cherry_parquet",
-      "count": 4
+      "count": 5
     }
   }
 }
