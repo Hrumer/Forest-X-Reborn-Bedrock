@@ -28,7 +28,7 @@ Snapshot 1.3.0.230705:
  + Added silver armor
  + Silver tools and armor now have an enchantability of 40
  = Silver tools are no longer enchanted when crafting
- - Added grapes and grape vine
+ + Added grapes and grape vine
  x Added a quiver
  - Added ash block
  = Completely redesigned volcano biome

@@ -228,6 +228,11 @@
 			"textures": [
 				"textures/items/silver_boots"
 			]
+		},
+		"grape": {
+			"textures": [
+				"textures/items/grape"
+			]
 		}
 	}
 }

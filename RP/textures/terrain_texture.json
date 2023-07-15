@@ -332,6 +332,16 @@
 			"textures": [
 				"textures/blocks/yellow_planks"
 			]
+		},
+		"grape_vine0": {
+			"textures": [
+				"textures/blocks/grape_vine0"
+			]
+		},
+		"grape_vine1": {
+			"textures": [
+				"textures/blocks/grape_vine1"
+			]
 		}
 	}
 }

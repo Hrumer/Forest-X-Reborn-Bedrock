@@ -567,5 +567,13 @@
 	"forest:yellow_fence_gate": {
 		"textures": "yellow_planks",
 		"sound": "wood"
+	},
+	"forest:grape_vine0": {
+		"textures": "grape_vine0",
+		"sound": "vines"
+	},
+	"forest:grape_vine1": {
+		"textures": "grape_vine1",
+		"sound": "vines"
 	}
 }
