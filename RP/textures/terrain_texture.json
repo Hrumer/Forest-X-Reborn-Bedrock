@@ -252,6 +252,86 @@
 			"textures": [
 				"textures/blocks/moonshroom"
 			]
+		},
+		"black_planks": {
+			"textures": [
+				"textures/blocks/black_planks"
+			]
+		},
+		"blue_planks": {
+			"textures": [
+				"textures/blocks/blue_planks"
+			]
+		},
+		"brown_planks": {
+			"textures": [
+				"textures/blocks/brown_planks"
+			]
+		},
+		"cyan_planks": {
+			"textures": [
+				"textures/blocks/cyan_planks"
+			]
+		},
+		"gray_planks": {
+			"textures": [
+				"textures/blocks/gray_planks"
+			]
+		},
+		"green_planks": {
+			"textures": [
+				"textures/blocks/green_planks"
+			]
+		},
+		"light_blue_planks": {
+			"textures": [
+				"textures/blocks/light_blue_planks"
+			]
+		},
+		"light_gray_planks": {
+			"textures": [
+				"textures/blocks/light_gray_planks"
+			]
+		},
+		"lime_planks": {
+			"textures": [
+				"textures/blocks/lime_planks"
+			]
+		},
+		"magenta_planks": {
+			"textures": [
+				"textures/blocks/magenta_planks"
+			]
+		},
+		"orange_planks": {
+			"textures": [
+				"textures/blocks/orange_planks"
+			]
+		},
+		"pink_planks": {
+			"textures": [
+				"textures/blocks/pink_planks"
+			]
+		},
+		"purple_planks": {
+			"textures": [
+				"textures/blocks/purple_planks"
+			]
+		},
+		"red_planks": {
+			"textures": [
+				"textures/blocks/red_planks"
+			]
+		},
+		"white_planks": {
+			"textures": [
+				"textures/blocks/white_planks"
+			]
+		},
+		"yellow_planks": {
+			"textures": [
+				"textures/blocks/yellow_planks"
+			]
 		}
 	}
 }

@@ -208,6 +208,26 @@
 			"textures": [
 				"textures/items/sunshroom"
 			]
+		},
+		"silver_helmet": {
+			"textures": [
+				"textures/items/silver_helmet"
+			]
+		},
+		"silver_chestplate": {
+			"textures": [
+				"textures/items/silver_chestplate"
+			]
+		},
+		"silver_leggings": {
+			"textures": [
+				"textures/items/silver_leggings"
+			]
+		},
+		"silver_boots": {
+			"textures": [
+				"textures/items/silver_boots"
+			]
 		}
 	}
 }

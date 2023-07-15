@@ -375,5 +375,197 @@
 	"forest:sunshroom": {
 		"textures": "sunshroom",
 		"sound": "fungus"
+	},
+	"forest:black_planks": {
+		"textures": "black_planks",
+		"sound": "wood"
+	},
+	"forest:black_fence": {
+		"textures": "black_planks",
+		"sound": "wood"
+	},
+	"forest:black_fence_gate": {
+		"textures": "black_planks",
+		"sound": "wood"
+	},
+	"forest:blue_planks": {
+		"textures": "blue_planks",
+		"sound": "wood"
+	},
+	"forest:blue_fence": {
+		"textures": "blue_planks",
+		"sound": "wood"
+	},
+	"forest:blue_fence_gate": {
+		"textures": "blue_planks",
+		"sound": "wood"
+	},
+	"forest:brown_planks": {
+		"textures": "brown_planks",
+		"sound": "wood"
+	},
+	"forest:brown_fence": {
+		"textures": "brown_planks",
+		"sound": "wood"
+	},
+	"forest:brown_fence_gate": {
+		"textures": "brown_planks",
+		"sound": "wood"
+	},
+	"forest:cyan_planks": {
+		"textures": "cyan_planks",
+		"sound": "wood"
+	},
+	"forest:cyan_fence": {
+		"textures": "cyan_planks",
+		"sound": "wood"
+	},
+	"forest:cyan_fence_gate": {
+		"textures": "cyan_planks",
+		"sound": "wood"
+	},
+	"forest:gray_planks": {
+		"textures": "gray_planks",
+		"sound": "wood"
+	},
+	"forest:gray_fence": {
+		"textures": "gray_planks",
+		"sound": "wood"
+	},
+	"forest:gray_fence_gate": {
+		"textures": "gray_planks",
+		"sound": "wood"
+	},
+	"forest:green_planks": {
+		"textures": "green_planks",
+		"sound": "wood"
+	},
+	"forest:green_fence": {
+		"textures": "green_planks",
+		"sound": "wood"
+	},
+	"forest:green_fence_gate": {
+		"textures": "green_planks",
+		"sound": "wood"
+	},
+	"forest:light_blue_planks": {
+		"textures": "light_blue_planks",
+		"sound": "wood"
+	},
+	"forest:light_blue_fence": {
+		"textures": "light_blue_planks",
+		"sound": "wood"
+	},
+	"forest:light_blue_fence_gate": {
+		"textures": "light_blue_planks",
+		"sound": "wood"
+	},
+	"forest:light_gray_planks": {
+		"textures": "light_gray_planks",
+		"sound": "wood"
+	},
+	"forest:light_gray_fence": {
+		"textures": "light_gray_planks",
+		"sound": "wood"
+	},
+	"forest:light_gray_fence_gate": {
+		"textures": "light_gray_planks",
+		"sound": "wood"
+	},
+	"forest:lime_planks": {
+		"textures": "lime_planks",
+		"sound": "wood"
+	},
+	"forest:lime_fence": {
+		"textures": "lime_planks",
+		"sound": "wood"
+	},
+	"forest:lime_fence_gate": {
+		"textures": "lime_planks",
+		"sound": "wood"
+	},
+	"forest:magenta_planks": {
+		"textures": "magenta_planks",
+		"sound": "wood"
+	},
+	"forest:magenta_fence": {
+		"textures": "magenta_planks",
+		"sound": "wood"
+	},
+	"forest:magenta_fence_gate": {
+		"textures": "magenta_planks",
+		"sound": "wood"
+	},
+	"forest:orange_planks": {
+		"textures": "orange_planks",
+		"sound": "wood"
+	},
+	"forest:orange_fence": {
+		"textures": "orange_planks",
+		"sound": "wood"
+	},
+	"forest:orange_fence_gate": {
+		"textures": "orange_planks",
+		"sound": "wood"
+	},
+	"forest:pink_planks": {
+		"textures": "pink_planks",
+		"sound": "wood"
+	},
+	"forest:pink_fence": {
+		"textures": "pink_planks",
+		"sound": "wood"
+	},
+	"forest:pink_fence_gate": {
+		"textures": "pink_planks",
+		"sound": "wood"
+	},
+	"forest:purple_planks": {
+		"textures": "purple_planks",
+		"sound": "wood"
+	},
+	"forest:purple_fence": {
+		"textures": "purple_planks",
+		"sound": "wood"
+	},
+	"forest:purple_fence_gate": {
+		"textures": "purple_planks",
+		"sound": "wood"
+	},
+	"forest:red_planks": {
+		"textures": "red_planks",
+		"sound": "wood"
+	},
+	"forest:red_fence": {
+		"textures": "red_planks",
+		"sound": "wood"
+	},
+	"forest:red_fence_gate": {
+		"textures": "red_planks",
+		"sound": "wood"
+	},
+	"forest:white_planks": {
+		"textures": "white_planks",
+		"sound": "wood"
+	},
+	"forest:white_fence": {
+		"textures": "white_planks",
+		"sound": "wood"
+	},
+	"forest:white_fence_gate": {
+		"textures": "white_planks",
+		"sound": "wood"
+	},
+	"forest:yellow_planks": {
+		"textures": "yellow_planks",
+		"sound": "wood"
+	},
+	"forest:yellow_fence": {
+		"textures": "yellow_planks",
+		"sound": "wood"
+	},
+	"forest:yellow_fence_gate": {
+		"textures": "yellow_planks",
+		"sound": "wood"
 	}
 }
