@@ -1,0 +1,22 @@
+{
+	"format_version": 1.16,
+	"minecraft:recipe_shapeless": {
+		"description": {
+			"identifier": "forest:black_fence_gate"
+		},
+		"tags": [
+			"crafting_table"
+		],
+		"ingredients": [
+			{
+				"item": "black_dye"
+			},
+			{
+				"item": "minecraft:wooden_fence_gate"
+			}
+		],
+		"result": {
+			"item": "forest:black_fence_gate"
+		}
+	}
+}
