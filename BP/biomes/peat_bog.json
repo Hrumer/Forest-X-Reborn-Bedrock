@@ -2,7 +2,7 @@
 	"format_version": "1.20.10",
 	"minecraft:biome": {
 		"description": {
-			"identifier": "forest:peat_bog"
+			"identifier": "peat_bog"
 		},
 		"components": {
 			"minecraft:climate": {

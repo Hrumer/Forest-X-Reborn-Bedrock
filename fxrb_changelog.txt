@@ -36,7 +36,7 @@ Snapshot 1.3.0.230705:
 
 1.2.0 Port:
 + Added painted planks, fences, fence gates, slabs and stairs
-? Added mechanics of painting planks with dyes without using a workbench
+x Added mechanics of painting planks with dyes without using a workbench
 + Added cherry parquet
 = Added new achievement
 = Added a separate tab for tools from the mod
